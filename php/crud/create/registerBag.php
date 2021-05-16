@@ -1,6 +1,11 @@
 <?php
 include "../db.php";
 
+echo $host;
+echo $dbname;
+echo $username;
+echo $password;
+
 $description = $_GET["description"];
 $price = $_GET["price"];
 $lenght = $_GET["lenght"];
