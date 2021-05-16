@@ -5,6 +5,7 @@ $bags = $db->query("
 SELECT b.*, COUNT(bi.id) images
 FROM bags b 
 LEFT JOIN bagsimages bi on b.id = bi.idBag
+ORDER BY b.id
 GROUP BY b.id
 ")->fetchAll(PDO::FETCH_OBJ);
 
@@ -53,6 +54,7 @@ echo "	</tbody>
 $images = $db->query("
 SELECT bi.id id, b.description description, bi.name, bi.idBag 
 FROM bagsimages bi 
+ORDER BY b.id
 LEFT JOIN bags b ON b.id=bi.idBag")->fetchAll(PDO::FETCH_OBJ);
 
 echo
