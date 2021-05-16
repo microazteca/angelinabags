@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  35% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  55% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+  75% {
+    transform: translateX(-400%);
+  }
+  90% {
+    transform: translateX(-400%);
+  }
+  95% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.logoFb > img,
+.logoInsta > img,
+.logoWhats > img {
+  display: inline-block;
+  padding: 5px;
+  width: 2.9rem;
+  border-radius: 0.7rem;
+  opacity: 0.79;
+}
+
+.logoFb {
+  bottom: 7rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logoInsta {
+  bottom: 9.5rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+.logoInsta > img {
+  border-radius: 1rem;
+}
+
+.logoWhats {
+  bottom: 12rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+.logoWhats > img {
+  border-radius: 1rem;
+}
+
+#upArrow > img {
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  width: 2.2rem;
+  background-color: rgba(249, 102, 129, 0.541);
+  font-size: 20px;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  z-index: 1000;
+  padding: 5px;
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  box-shadow: #ec7488 0 0 10px 5px;
+}
+header .headerTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+header .headerTexto > h1 {
+  font-family: "Dancing Script";
+  font-size: 4.5rem;
+}
+header .headerTexto > img {
+  height: 4rem;
+  width: 3.5rem;
+  padding-left: 0.5rem;
+}
+header > nav {
+  padding: 0.5px 0 0;
+}
+header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-family: "Lexend", sans-serif;
+}
+header > nav > ul > li > a {
+  transition: color 0.2s;
+  font-size: 1.95rem;
+}
+header > nav > ul > li > a:hover {
+  color: #e63d59;
+}
+
+.sliderBolsas {
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0 0;
+  overflow: hidden;
+}
+.sliderBolsas > ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: sliderBolsas 15s linear infinite alternate;
+}
+.sliderBolsas > ul > li {
+  width: 100%;
+  text-align: center;
+}
+.sliderBolsas > ul > li > img {
+  width: 50%;
+}
+
+.productos {
+  display: flex;
+  padding-top: 3rem;
+  font-family: "Lexend", sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+.productos .productosTitulo {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  animation: tituloEfecto 2s infinite alternate;
+}
+.productos .productosCatalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.productos .productosCatalogo .contenedorProductos {
+  width: 200px;
+  height: 25%;
+  padding: 0.5rem 0.5rem 0;
+  border-color: pink;
+  border-radius: 0.5rem;
+}
+.productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a > button {
+  background: linear-gradient(pink, white);
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 2px;
+  color: black;
+  margin: 3px 1px 5px;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.845rem;
+  cursor: pointer;
+}
+.productos .productosCatalogo .contenedorProductos .contenedorProductosImg > img {
+  width: 100%;
+  object-fit: cover;
+}
+.productos .productosCatalogo .contenedorProductos .contenedorProductosTexto {
+  padding: 0;
+  margin: 0;
+}
+.productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a {
+  text-decoration: underline;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend", sans-serif;
+  margin: 3rem 0 0;
+  padding: 0.5rem 0 1rem;
+  background-color: pink;
+}
+.contacto .contactoTitulo {
+  font-size: 1.5rem;
+  animation: tituloEfecto 2s infinite alternate;
+  align-self: center;
+}
+.contacto .contactoTelefono {
+  display: flex;
+  padding-bottom: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .contactoTelefono .contactoTelefonoNumero > a {
+  font-size: 1.5rem;
+}
+
+@keyframes tituloEfecto {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #e63d59;
+  }
+}
+@keyframes sliderBolsas {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  html {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  header {
+    width: 100%;
+    align-self: stretch;
+    justify-content: space-around;
+  }
+  header .headerTexto {
+    padding-top: 0.25rem;
+  }
+  header .headerTexto > h1 {
+    font-size: 3.3rem;
+    padding-left: 0.2rem;
+  }
+  header > nav {
+    justify-content: center;
+  }
+  header > nav > ul > li > a {
+    font-size: 1.3rem;
+    padding-left: 0.4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sliderBolsas > ul > li > img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 1000px) {
+  .sliderBolsas > ul > li > img {
+    width: 80%;
+  }
+
+  #productos {
+    animation: none;
+  }
+  #productos .productosCatalogo {
+    animation: none;
+  }
+  #productos .productosCatalogo .contenedorProductos {
+    background-color: #ffc6d0;
+    margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .productos {
+    animation: none;
+  }
+  .productos .productosCatalogo .contenedorProductos {
+    background-color: #ffc6d0;
+    margin: 0.5rem;
+    border-radius: 0.4rem;
+    width: 9rem;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0;
+  }
+  .productos .productosCatalogo .contenedorProductos .contenedorProductosImg {
+    margin: 0;
+    height: fit-content;
+  }
+  .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a > button {
+    background: linear-gradient(pink, white);
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 2px;
+    color: black;
+    margin: 3px 22.5px 5px;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.845rem;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 1000px) {
+  .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a > button {
+    background: linear-gradient(pink, white);
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 2px;
+    color: black;
+    margin: 3px 51px 5px;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.845rem;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1800px) {
+  .productos .productosCatalogo .contenedorProductos {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+  .productos .productosCatalogo .contenedorProductos:hover {
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+    background-color: pink;
+    border-radius: 0.5rem;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .contacto .contactoTelefono {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1220px) {
+  .contacto .contactoTelefono {
+    padding-bottom: 0;
+  }
+}

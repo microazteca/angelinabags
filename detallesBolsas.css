@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.logoFb > img,
+.logoInsta > img,
+.logoWhats > img {
+  display: inline-block;
+  padding: 5px;
+  width: 2.9rem;
+  border-radius: 0.7rem;
+  opacity: 0.79;
+}
+
+.logoFb {
+  bottom: 7rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logoInsta {
+  bottom: 9.5rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+.logoInsta > img {
+  border-radius: 1rem;
+}
+
+.logoWhats {
+  bottom: 12rem;
+  right: 0.2rem;
+  position: fixed;
+  z-index: 1000;
+}
+.logoWhats > img {
+  border-radius: 1rem;
+}
+
+#upArrow > img {
+  position: fixed;
+  bottom: 4rem;
+  right: 0.5rem;
+  cursor: pointer;
+  width: 2.2rem;
+  background-color: rgba(249, 102, 129, 0.541);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  z-index: 1000;
+  padding: 5px;
+  display: inline-block;
+}
+
+#backArrow > img {
+  position: absolute;
+  top: 4.2rem;
+  left: 0.3rem;
+  cursor: pointer;
+  width: 2.2rem;
+  transform: rotate(-90deg);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  z-index: 1000;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  box-shadow: #ec7488 0 0 10px 5px;
+}
+header .headerTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+header .headerTexto > h1 {
+  font-family: "Dancing Script";
+  font-size: 3rem;
+  padding-bottom: 0.3rem;
+}
+
+.contenedorBolsa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lexend", sans-serif;
+  padding-top: 0.5rem;
+}
+.contenedorBolsa .contenedorBolsaNombre {
+  font-size: 1rem;
+  animation: tituloEfecto 2s infinite alternate;
+}
+.contenedorBolsa .contenedorBolsaPrecio {
+  font-size: 0.8rem;
+}
+.contenedorBolsa .contenedorBolsaImagenes {
+  display: flex;
+  flex-direction: column;
+}
+.contenedorBolsa .contenedorBolsaImagenes > img {
+  width: 50%;
+  align-self: center;
+}
+
+.contenedorCaracteristicas {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 2rem;
+  font-family: "Lexend", sans-serif;
+  align-items: center;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTitulo > h2 {
+  animation: tituloEfecto 2s infinite alternate;
+  align-self: center;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTabla {
+  padding-top: 1rem;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTabla > table {
+  align-self: center;
+  border-collapse: collapse;
+  border: black 0 solid;
+  margin: 0;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTabla > table tr {
+  border: black 2px solid;
+  font-size: 1.05rem;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTabla > table #caract {
+  background-color: pink;
+  padding: 0.25rem;
+}
+.contenedorCaracteristicas .contenedorCaracteristicasTabla > table #info {
+  width: 50%;
+  text-align: center;
+}
+
+@keyframes tituloEfecto {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #e63d59;
+  }
+}
