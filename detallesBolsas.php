@@ -11,7 +11,7 @@
 </head>
 
 <?php
-include "crud/db.php";
+include "php/crud/db.php";
 $id = $_GET["id"];
 $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 ?>
