@@ -5,8 +5,8 @@ $bags = $db->query("
 SELECT b.*, COUNT(bi.id) images
 FROM bags b 
 LEFT JOIN bagsimages bi on b.id = bi.idBag
-ORDER BY b.id
 GROUP BY b.id
+ORDER BY b.id
 ")->fetchAll(PDO::FETCH_OBJ);
 
 echo "<div class=''><p class='text-center bg-info mx-3 fs-6'> Remember : you need to erase all the images from the bag before you erase it </p>";
@@ -54,8 +54,8 @@ echo "	</tbody>
 $images = $db->query("
 SELECT bi.id id, b.description description, bi.name, bi.idBag 
 FROM bagsimages bi 
-ORDER BY b.id
-LEFT JOIN bags b ON b.id=bi.idBag")->fetchAll(PDO::FETCH_OBJ);
+LEFT JOIN bags b ON b.id=bi.idBag
+ORDER BY b.id DESC")->fetchAll(PDO::FETCH_OBJ);
 
 echo
 "<div class=''><table class='table col-5 table-hover table-striped'>
