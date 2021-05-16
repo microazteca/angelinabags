@@ -55,7 +55,7 @@ $images = $db->query("
 SELECT bi.id id, b.description description, bi.name, bi.idBag 
 FROM bagsimages bi 
 LEFT JOIN bags b ON b.id=bi.idBag
-ORDER BY b.id DESC")->fetchAll(PDO::FETCH_OBJ);
+ORDER BY b.id")->fetchAll(PDO::FETCH_OBJ);
 
 echo
 "<div class=''><table class='table col-5 table-hover table-striped'>
