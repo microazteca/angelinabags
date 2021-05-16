@@ -23,7 +23,7 @@ $images = $db->query("SELECT * FROM bagsimages")->fetchAll(PDO::FETCH_OBJ);
 
 <body>
 	<!-- Header -->
-	<h1 class="text-center m-2">Bag registration TEST</h1>
+	<h1 class="text-center m-2">Bag registration</h1>
 	<!-- Forms -->
 	<div class="container my-5">
 		<div class="row">
