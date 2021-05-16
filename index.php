@@ -13,6 +13,7 @@
 <?php
 include "php/config.php";
 $api = json_decode(file_get_contents($apiUrl));
+
 ?>
 
 <body></body>
