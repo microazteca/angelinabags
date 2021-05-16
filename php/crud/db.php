@@ -8,4 +8,3 @@ try {
 	die("Error" . $e->getMessage());
 	echo "error line: " . $e->getLine();
 }
-
