@@ -1,5 +1,5 @@
 <?php
-include "./php/crud/db.php";
+include "../db.php";
 
 $description = $_GET["description"];
 $price = $_GET["price"];
