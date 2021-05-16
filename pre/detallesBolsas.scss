@@ -1,0 +1,206 @@
+//imports de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+//configuraciones generales
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+	&:visited {
+		color: black;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+//rrss íconos
+.logoFb,
+.logoInsta,
+.logoWhats {
+	>img {
+		display: inline-block;
+		padding: 5px;
+		width: 2.9rem;
+		border-radius: .7rem;
+		opacity: 0.79;
+
+	}
+}
+
+.logoFb {
+	bottom: 7rem;
+	right: .2rem;
+	position: fixed;
+	z-index: 1000;
+}
+
+.logoInsta {
+	bottom: 9.5rem;
+	right: .2rem;
+	position: fixed;
+	z-index: 1000;
+
+	>img {
+		border-radius: 1rem;
+	}
+}
+
+.logoWhats {
+	bottom: 12rem;
+	right: .2rem;
+	position: fixed;
+	z-index: 1000;
+
+	>img {
+		border-radius: 1rem;
+	}
+}
+
+//flecha-arriba
+#upArrow {
+	>img {
+		position: fixed;
+		bottom: 4rem;
+		right: .5rem;
+		cursor: pointer;
+		width: 2.2rem;
+		background-color: rgba(249, 102, 129, 0.541);
+		border-radius: .3rem;
+		-webkit-border-radius: .3rem;
+		z-index: 1000;
+		padding: 5px;
+		display: inline-block;
+	}
+}
+
+//flecha-regreso al inicio
+#backArrow {
+	>img {
+		position: absolute;
+		top: 4.2rem;
+		left: .3rem;
+		cursor: pointer;
+		width: 2.2rem;
+		transform: rotate(-90deg);
+		border-radius: .3rem;
+		-webkit-border-radius: .3rem;
+		z-index: 1000;
+		padding: 5px;
+	}
+}
+
+// Header
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+	box-shadow: rgb(236, 116, 136) 0 0 10px 5px;
+
+	.headerTexto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: stretch;
+
+		>h1 {
+			font-family: 'Dancing Script';
+			font-size: 3rem;
+			padding-bottom: .3rem;
+		}
+	}
+}
+
+.contenedorBolsa {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Lexend',
+		sans-serif;
+	padding-top: .5rem;
+
+	.contenedorBolsaNombre {
+		font-size: 1rem;
+		animation: tituloEfecto 2s infinite alternate;
+	}
+
+	.contenedorBolsaPrecio {
+		font-size: .8rem;
+	}
+
+	.contenedorBolsaImagenes {
+		display: flex;
+		flex-direction: column;
+
+		>img {
+			width: 50%;
+			align-self: center;
+
+		}
+	}
+}
+
+.contenedorCaracteristicas {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0 2rem;
+	font-family: 'Lexend',
+		sans-serif;
+	align-items: center;
+
+	.contenedorCaracteristicasTitulo {
+		>h2 {
+			animation: tituloEfecto 2s infinite alternate;
+			align-self: center;
+		}
+	}
+
+	.contenedorCaracteristicasTabla {
+		padding-top: 1rem;
+
+		>table {
+			align-self: center;
+			border-collapse: collapse;
+			border: black 0 solid;
+			margin: 0;
+
+			tr {
+				border: black 2px solid;
+				font-size: 1.05rem;
+
+
+			}
+
+			#caract {
+				background-color: pink;
+				padding: .25rem;
+			}
+
+			#info {
+				width: 50%;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+//animación Título header
+@keyframes tituloEfecto {
+	0% {
+		color: black;
+	}
+
+	100% {
+		color: rgb(230, 61, 89);
+	}
+}
