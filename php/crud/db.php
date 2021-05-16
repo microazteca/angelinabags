@@ -1,5 +1,5 @@
 <?php
-include "../config.php";
+include "config.php";
 
 try {
 	$db = new PDO('mysql:host=' . $host . '; dbname=' . $dbname, $username, $password);
