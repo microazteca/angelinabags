@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Register | AngelineBags</title>
+	<title>Register | TEST AngelineBags</title>
 	<!-- BOOTSTRAP -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@ $images = $db->query("SELECT * FROM bagsimages")->fetchAll(PDO::FETCH_OBJ);
 
 <body>
 	<!-- Header -->
-	<h1 class="text-center m-2">Bag registration</h1>
+	<h1 class="text-center m-2">Bag registration TEST</h1>
 	<!-- Forms -->
 	<div class="container my-5">
 		<div class="row">
