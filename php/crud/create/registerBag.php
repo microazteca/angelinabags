@@ -15,4 +15,4 @@ VALUES ('$description','$price','$lenght','$width','$height','$handle')
 
 $db->query($query);
 
-header("Location:" . $home);
+//header("Location:" . $home);
