@@ -29,7 +29,7 @@ $api = json_decode(file_get_contents($apiUrl));
 <!--header-->
 <header id="principal">
 	<div class="headerTexto">
-		<h1>Angeline Bags</h1>
+		<h1>Esta es una prueba</h1>
 	</div>
 	<nav>
 		<ul>
