@@ -11,7 +11,7 @@
 </head>
 
 <?php
-include "php/config.php";
+include "php/crud/config.php";
 $api = json_decode(file_get_contents($apiUrl));
 
 ?>
