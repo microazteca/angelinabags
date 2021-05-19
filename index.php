@@ -13,7 +13,7 @@
 <?php
 include "php/crud/config.php";
 $api = json_decode(file_get_contents($apiUrl));
-
+var_dump($api[0]->images);
 ?>
 
 <body></body>
@@ -56,7 +56,7 @@ $api = json_decode(file_get_contents($apiUrl));
 
 		<?php foreach ($api as $bag) : ?>
 			<div class="contenedorProductos">
-				<div class="contenedorProductosImg"><img src="uploads/<?php echo $bag->images[0]->url; ?>" alt="<?php echo $bag->description ?>"></div>
+				<div class="contenedorProductosImg"><img src="<?php echo $bag->images[0]->url; ?>" alt="<?php echo $bag->description ?>"></div>
 				<div class="contenedorProductosTexto">
 					<p><?php echo $bag->description ?></p>
 					<p>$<?php echo $bag->price ?>.00 MXN</p><a href="detallesBolsas.php?id=<?php echo $bag->id ?>">
