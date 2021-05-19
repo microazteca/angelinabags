@@ -15,7 +15,7 @@ class request
 			$query = "SELECT * FROM bagsimages WHERE idBag=$bag->id";
 			$images = $this->db->query($query)->fetchAll(PDO::FETCH_OBJ);
 			foreach ($images as $image) {
-				$image->url = $this->imagesUrl . $image;
+				$image->url = $this->imagesUrl . $image->name;
 			}
 			$bag->images = $images;
 		}
