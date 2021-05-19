@@ -23,5 +23,6 @@ $password = "MS@/c8=3#3s";
 $home = "https://salonrizo.com/test/angelinebags/php/crud/";
 $apiUrl = "https://salonrizo.com/test/angelinebags/php/api/";
 $uploadCarpet = "/test/angelinebags/uploads/";
+$imagesUrl = "https://salonrizo.com/test/angelinebags/uploads/";
 
 ?>
