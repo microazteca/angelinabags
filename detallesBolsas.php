@@ -47,7 +47,7 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 
 		<div class="contenedorBolsaImagenes">
 			<?php foreach ($api->images as $image) : ?>
-				<img src="uploads/<?php echo $image->name ?> " alt="">
+				<img src="<?php echo $image->url ?>" alt="">
 			<?php endforeach ?>
 		</div>
 

@@ -13,7 +13,6 @@
 <?php
 include "php/crud/config.php";
 $api = json_decode(file_get_contents($apiUrl));
-var_dump($api[0]->images);
 ?>
 
 <body></body>
