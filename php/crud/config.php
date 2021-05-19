@@ -10,6 +10,7 @@ $password = "Mo]6ED]yRf";
 $home = "https://salonrizo.com/tools/angelinebags/php/crud/";
 $apiUrl = "https://salonrizo.com/tools/angelinebags/php/api/";
 $uploadCarpet = "/tools/angelinebags/uploads/";
+$imagesUrl = "https://salonrizo.com/tools/angelinebags/uploads";
 
 ///////////////////////////////////////////////
 //	test branch
