@@ -30,7 +30,9 @@ $api = json_decode(file_get_contents($apiUrl));
 <!--header-->
 <header id="principal">
 	<div class="headerTexto">
-		<h1>Angeline Bags</h1>
+		<a href="index.php">
+			<h1>Angeline Bags</h1>
+		</a>
 	</div>
 	<nav>
 		<ul>
@@ -57,7 +59,7 @@ $api = json_decode(file_get_contents($apiUrl));
 
 		<?php foreach ($api as $bag) : ?>
 			<div class="contenedorProductos">
-				<div class="contenedorProductosImg"><img src="<?php echo $bag->images[0]->url; ?>" alt="<?php echo $bag->description ?>"></div>
+				<div class="contenedorProductosImg"><a href="detallesBolsas.php?id=<?php echo $bag->id ?>"><img src="<?php echo $bag->images[0]->url; ?>" alt="<?php echo $bag->description ?>"></a></div>
 				<div class="contenedorProductosTexto">
 					<p><?php echo $bag->description ?></p>
 					<p>$<?php echo $bag->price ?>.00 MXN</p><a href="detallesBolsas.php?id=<?php echo $bag->id ?>">

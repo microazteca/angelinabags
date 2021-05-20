@@ -105,7 +105,7 @@ header .headerTexto {
   justify-content: center;
   align-self: stretch;
 }
-header .headerTexto > h1 {
+header .headerTexto > a > h1 {
   font-family: "Dancing Script";
   font-size: 3rem;
   padding-bottom: 0.3rem;

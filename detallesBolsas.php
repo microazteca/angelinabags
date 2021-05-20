@@ -34,7 +34,9 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 	<!--header-->
 	<header id="principal">
 		<div class="headerTexto">
-			<h1>Angeline Bags</h1>
+			<a href="index.php">
+				<h1>Angeline Bags</h1>
+			</a>
 		</div>
 	</header>
 	<!--bolsa-->
