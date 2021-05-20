@@ -208,6 +208,7 @@ header > nav > ul > li > a:hover {
 .productos .productosCatalogo .contenedorProductos .contenedorProductosImg > img {
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto {
   padding: 0;
