@@ -108,6 +108,31 @@ ul {
   display: inline-block;
 }
 
+.flechaArriba > a > img {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(249, 102, 129, 0.597);
+  bottom: 5rem;
+  right: 0.5rem;
+  z-index: 1000;
+  border-radius: 10%;
+  position: fixed;
+  transition: opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flechaArriba > a > img.active {
+  visibility: visible;
+  opacity: 1;
+}
+.flechaArriba > a > img.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -208,7 +233,6 @@ header > nav > ul > li > a:hover {
 .productos .productosCatalogo .contenedorProductos .contenedorProductosImg > img {
   width: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto {
   padding: 0;

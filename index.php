@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link id="pageIcon" rel="shortcut icon" href="iconoLogo/iconoLogoAB.png">
+	<script src="script.js"></script>
 	<title>Angeline Bags</title>
 </head>
 
@@ -24,7 +25,8 @@ $api = json_decode(file_get_contents($apiUrl));
 </a><a hre target="_blank">
 	<div class="logoWhats"><img src="svg/whatsLogo.svg" al></div>
 </a>
-<!--flecha-arriba--><a id="upArrow" href="#principal"><img src="svg/flechaIrArriba.svg" al></a>
+<!--flecha-arriba-->
+<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="svg/flechaIrArriba.svg" alt=""></a></div>
 <!--header-->
 <header id="principal">
 	<div class="headerTexto">
