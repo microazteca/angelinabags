@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="detallesBolsas.css">
 	<link id="pageIcon" rel="shortcut icon" href="iconoLogo/iconoLogoAB.png">
+	<script src="script.js"></script>
 	<title>Angeline Bags | Detalles</title>
 </head>
 
@@ -27,7 +28,7 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 		<div class="logoWhats"><img src="svg/whatsLogo.svg" alt=""></div>
 	</a>
 	<!--flecha-arriba-->
-	<a id="upArrow" href="#principal"><img src="svg/flechaIrArriba.svg" alt=""></a>
+	<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="svg/flechaIrArriba.svg" alt=""></a></div>
 	<!--flecha-regreso al inicio-->
 	<a id="backArrow" href="index.php#productos"><img src="svg/flechaIrArriba.svg" alt=""></a>
 	<!--header-->
@@ -55,7 +56,7 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 	<!--características-->
 	<div class="contenedorCaracteristicas">
 		<div class="contenedorCaracteristicasTitulo">
-			<h2>CARACTERÍSTICAS</h2>
+			<h2>Características</h2>
 		</div>
 		<div class="contenedorCaracteristicasTabla">
 			<table>

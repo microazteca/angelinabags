@@ -55,18 +55,29 @@ ul {
   border-radius: 1rem;
 }
 
-#upArrow > img {
-  position: fixed;
-  bottom: 4rem;
+.flechaArriba > a > img {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(249, 102, 129, 0.597);
+  bottom: 5rem;
   right: 0.5rem;
-  cursor: pointer;
-  width: 2.2rem;
-  background-color: rgba(249, 102, 129, 0.541);
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
   z-index: 1000;
-  padding: 5px;
-  display: inline-block;
+  border-radius: 10%;
+  position: fixed;
+  transition: opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flechaArriba > a > img.active {
+  visibility: visible;
+  opacity: 1;
+}
+.flechaArriba > a > img.inactive {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #backArrow > img {
@@ -110,6 +121,9 @@ header .headerTexto > h1 {
 .contenedorBolsa .contenedorBolsaNombre {
   font-size: 1rem;
   animation: tituloEfecto 2s infinite alternate;
+  margin: 0 3rem 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 .contenedorBolsa .contenedorBolsaPrecio {
   font-size: 0.8rem;
@@ -119,8 +133,10 @@ header .headerTexto > h1 {
   flex-direction: column;
 }
 .contenedorBolsa .contenedorBolsaImagenes > img {
-  width: 50%;
+  width: 75%;
   align-self: center;
+  margin-top: 0.5rem;
+  border-radius: 5px;
 }
 
 .contenedorCaracteristicas {
@@ -133,6 +149,7 @@ header .headerTexto > h1 {
 .contenedorCaracteristicas .contenedorCaracteristicasTitulo > h2 {
   animation: tituloEfecto 2s infinite alternate;
   align-self: center;
+  font-size: 1.5rem;
 }
 .contenedorCaracteristicas .contenedorCaracteristicasTabla {
   padding-top: 1rem;
@@ -145,7 +162,7 @@ header .headerTexto > h1 {
 }
 .contenedorCaracteristicas .contenedorCaracteristicasTabla > table tr {
   border: black 2px solid;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 .contenedorCaracteristicas .contenedorCaracteristicasTabla > table #caract {
   background-color: pink;

@@ -93,19 +93,29 @@ ul {
   border-radius: 1rem;
 }
 
-#upArrow > img {
-  position: fixed;
+.flechaArriba > a > img {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(249, 102, 129, 0.597);
   bottom: 5rem;
   right: 0.5rem;
-  cursor: pointer;
-  width: 2.2rem;
-  background-color: rgba(249, 102, 129, 0.541);
-  font-size: 20px;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
   z-index: 1000;
-  padding: 5px;
-  display: inline-block;
+  border-radius: 10%;
+  position: fixed;
+  transition: opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flechaArriba > a > img.active {
+  visibility: visible;
+  opacity: 1;
+}
+.flechaArriba > a > img.inactive {
+  visibility: hidden;
+  opacity: 0;
 }
 
 header {
@@ -208,6 +218,7 @@ header > nav > ul > li > a:hover {
 .productos .productosCatalogo .contenedorProductos .contenedorProductosImg > img {
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto {
   padding: 0;
@@ -230,14 +241,19 @@ header > nav > ul > li > a:hover {
   animation: tituloEfecto 2s infinite alternate;
   align-self: center;
 }
+.contacto .contactoTitulo .contactoTelefonoNumero > a {
+  font-size: 2rem;
+  animation: tituloEfecto 2s infinite alternate;
+}
 .contacto .contactoTelefono {
   display: flex;
   padding-bottom: 1.2rem;
   flex-direction: column;
   align-items: center;
 }
-.contacto .contactoTelefono .contactoTelefonoNumero > a {
-  font-size: 1.5rem;
+.contacto .contactoTelefono .contactoTelefonoTexto > h4 {
+  font-size: 1rem;
+  text-align: center;
 }
 
 @keyframes tituloEfecto {
