@@ -194,14 +194,14 @@ header > nav > ul > li > a:hover {
 .productos .productosCatalogo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
 }
 .productos .productosCatalogo .contenedorProductos {
   width: 200px;
   height: 25%;
   padding: 0.5rem 0.5rem 0;
-  border-color: pink;
+  border: 3px solid pink;
+  background-color: rgba(255, 192, 203, 0.412);
   border-radius: 0.5rem;
 }
 .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a > button {
@@ -333,16 +333,18 @@ header > nav > ul > li > a:hover {
     animation: none;
   }
   #productos .productosCatalogo .contenedorProductos {
-    background-color: #ffc6d0;
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
     margin: 0.5rem;
   }
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (min-width: 0px) and (max-width: 734px) {
   .productos {
     animation: none;
   }
   .productos .productosCatalogo .contenedorProductos {
-    background-color: #ffc6d0;
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
     margin: 0.5rem;
     border-radius: 0.4rem;
     width: 9rem;
@@ -366,20 +368,24 @@ header > nav > ul > li > a:hover {
     border-radius: 0.25rem;
     padding: 2px;
     color: black;
-    margin: 3px 22.5px 5px;
+    margin: 3px 20px 5px;
     font-family: "Lexend", sans-serif;
     font-size: 0.845rem;
     cursor: pointer;
   }
 }
 @media only screen and (min-width: 735px) and (max-width: 1000px) {
+  .productos .productosCatalogo .contenedorProductos {
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
+  }
   .productos .productosCatalogo .contenedorProductos .contenedorProductosTexto > a > button {
     background: linear-gradient(pink, white);
     border: 1px solid black;
     border-radius: 0.25rem;
     padding: 2px;
     color: black;
-    margin: 3px 51px 5px;
+    margin: 3px 45px 5px;
     font-family: "Lexend", sans-serif;
     font-size: 0.845rem;
     cursor: pointer;
@@ -387,6 +393,8 @@ header > nav > ul > li > a:hover {
 }
 @media only screen and (min-width: 950px) and (max-width: 1800px) {
   .productos .productosCatalogo .contenedorProductos {
+    max-width: 200px;
+    margin: 0.5rem 2rem 0.5rem;
     -webkit-transition: 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
   }

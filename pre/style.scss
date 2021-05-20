@@ -241,15 +241,16 @@ header {
  .productosCatalogo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
 
   .contenedorProductos {
    width: 200px;
    height: 25%;
    padding: 0.5rem 0.5rem 0;
-   border-color: pink;
+   border: 3px solid pink;
+   background-color: rgba(255, 192, 203, 0.412);
    border-radius: 0.5rem;
+
 
    .contenedorProductosTexto {
     >a {
@@ -443,7 +444,8 @@ header {
    animation: none;
 
    .contenedorProductos {
-    background-color: rgb(255, 198, 208);
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
     margin: 0.5rem;
    }
   }
@@ -451,13 +453,14 @@ header {
 }
 
 //media Productos
-@media only screen and (max-width: 568px) {
+@media only screen and (min-width: 0px) and (max-width: 734px) {
  .productos {
   animation: none;
 
   .productosCatalogo {
    .contenedorProductos {
-    background-color: rgb(255, 198, 208);
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
     margin: 0.5rem;
     border-radius: 0.4rem;
     width: 9rem;
@@ -483,7 +486,7 @@ header {
        border-radius: 0.25rem;
        padding: 2px;
        color: black;
-       margin: 3px 22.5px 5px;
+       margin: 3px 20px 5px;
        font-family: "Lexend", sans-serif;
        font-size: 0.845rem;
        cursor: pointer;
@@ -499,6 +502,9 @@ header {
  .productos {
   .productosCatalogo {
    .contenedorProductos {
+    border: 3px solid pink;
+    background-color: rgba(255, 192, 203, 0.412);
+
     .contenedorProductosTexto {
      >a {
       >button {
@@ -507,7 +513,7 @@ header {
        border-radius: 0.25rem;
        padding: 2px;
        color: black;
-       margin: 3px 51px 5px;
+       margin: 3px 45px 5px;
        font-family: "Lexend", sans-serif;
        font-size: 0.845rem;
        cursor: pointer;
@@ -522,9 +528,13 @@ header {
 @media only screen and (min-width: 950px) and (max-width: 1800px) {
  .productos {
   .productosCatalogo {
+
    .contenedorProductos {
+    max-width: 200px;
+    margin: .5rem 2rem .5rem;
     -webkit-transition: 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
+
 
     &:hover {
      -webkit-transform: scale(1.025);
