@@ -73,14 +73,13 @@ $api = json_decode(file_get_contents($apiUrl));
 </html>
 <div class="contacto" id="contacto">
 	<div class="contactoTitulo">
-		<h2>CONTACTO</h2>
-	</div>
-	<div class="contactoTelefono">
 		<div class="contactoTelefonoNumero"><a href="tel:+529981117490">
 				<h4>998 111 74 90</h4>
 			</a></div>
+	</div>
+	<div class="contactoTelefono">
 		<div class="contactoTelefonoTexto">
-			<h4>(Haz clic para llamar)</h4>
+			<h4>(Clic en el número para llamar)</h4>
 		</div>
 	</div>
 </div>
