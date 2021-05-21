@@ -41,19 +41,19 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 	</header>
 	<!--bolsa-->
 	<div class="contenedorBolsa">
-		<div class="contenedorBolsaNombre">
-			<h2><?php echo $api->description ?></h2>
+		<div class="contenedorBolsaTextos">
+			<div class="contenedorBolsaNombre">
+				<h2><?php echo $api->description ?></h2>
+			</div>
+			<div class="contenedorBolsaPrecio">
+				<h2>$<?php echo $api->price ?>.00 mxn</h2>
+			</div>
 		</div>
-		<div class="contenedorBolsaPrecio">
-			<h2>$<?php echo $api->price ?>.00 mxn</h2>
-		</div>
-
 		<div class="contenedorBolsaImagenes">
 			<?php foreach ($api->images as $image) : ?>
 				<img src="<?php echo $image->url ?>" alt="">
 			<?php endforeach ?>
 		</div>
-
 	</div>
 	<!--características-->
 	<div class="contenedorCaracteristicas">
