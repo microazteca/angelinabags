@@ -255,10 +255,9 @@ header > nav > ul > li > a:hover {
   text-align: center;
 }
 .contacto .contactoMapa > h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  padding: 0 20px 7px;
   text-align: center;
-  padding: 0 0.5rem 0.5rem;
-  padding: 0 0.5rem 0.5rem;
   color: #e62444;
 }
 .contacto .contactoMapa > iframe {
@@ -277,14 +276,15 @@ header > nav > ul > li > a:hover {
 }
 .contacto .contactoMapa .contenedorBotonMapa .botonMapa > a > button {
   background: linear-gradient(pink, white);
-  border: 1.5px solid black;
+  border: 1.75px solid black;
   border-radius: 0.25rem;
-  padding: 2px;
+  padding: 3px;
   color: black;
   font-family: "Lexend", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   cursor: pointer;
-  margin: 3px 1px 5px;
+  margin: 5px 1px 5px;
+  font-weight: bold;
 }
 .contacto .contactoTelefono {
   display: flex;
