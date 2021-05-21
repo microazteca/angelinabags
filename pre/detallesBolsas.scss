@@ -125,42 +125,54 @@ header {
   justify-content: center;
   align-self: stretch;
 
-  >h1 {
-   font-family: "Dancing Script";
-   font-size: 3rem;
-   padding-bottom: 0.3rem;
+  >a {
+   >h1 {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    padding-bottom: 0.3rem;
+   }
   }
  }
 }
 
+//Producto
 .contenedorBolsa {
  display: flex;
- flex-direction: column;
- align-items: center;
  font-family: "Lexend", sans-serif;
  padding-top: 0.5rem;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
 
- .contenedorBolsaNombre {
-  font-size: 1rem;
-  animation: tituloEfecto 2s infinite alternate;
-  margin: 0 3rem 0;
-  text-align: center;
-  padding-bottom: .5rem;
- }
-
- .contenedorBolsaPrecio {
-  font-size: 0.8rem;
- }
-
- .contenedorBolsaImagenes {
+ .contenedorBolsaTextos {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  .contenedorBolsaNombre {
+   font-size: 1rem;
+   animation: tituloEfecto 2s infinite alternate;
+   margin: 0 3rem 0;
+   text-align: center;
+  }
+
+  .contenedorBolsaPrecio {
+   font-size: 0.8rem;
+  }
+ }
+
+
+ .contenedorBolsaImagenes {
+  align-self: center;
+  justify-content: center;
+  margin-top: 1rem;
+
 
   >img {
-   width: 75%;
-   align-self: center;
-   margin-top: .5rem;
-   border-radius: 5px;
+   width: 100%;
+   border-radius: 1rem;
+   object-fit: contain;
+   padding: 0 .3rem;
   }
  }
 }
@@ -202,6 +214,30 @@ header {
    #info {
     width: 50%;
     text-align: center;
+   }
+  }
+ }
+}
+
+@media only screen and (min-width: 931px) and (max-width: 1500px){
+ .contenedorBolsa {
+  display: flex;
+  font-family: "Lexend", sans-serif;
+  padding-top: 0.5rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .contenedorBolsaImagenes {
+   align-self: center;
+   justify-content: center;
+
+   >img {
+    width: 25%;
+    border-radius: 1rem;
+    object-fit: contain;
+    padding: 0 .3rem;
+    margin: 1rem 3rem 0;
    }
   }
  }
