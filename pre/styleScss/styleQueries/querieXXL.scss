@@ -1,0 +1,56 @@
+@media only screen and (min-width: 931px) {
+	.productos {
+		.productosCatalogo {
+			.contenedorCatalogoProductos {
+				justify-content: center;
+				display: flex;
+				width: 20%;
+
+				.contenedorProductos {
+					border: 3px solid pink;
+					background-color: rgba(255, 192, 203, 0.412);
+					margin: 1rem;
+					border-radius: 0.4rem;
+					width: 100%;
+					height: fit-content;
+					padding: 0.5rem 0.5rem 0;
+					flex-wrap: wrap;
+
+
+					.contenedorProductosImg {
+						margin: 0;
+						height: fit-content;
+					}
+
+					.contenedorProductosTexto {
+						height: 3.375rem;
+
+						.contenedorProductosP {
+							font-size: 0.9rem;
+						}
+					}
+
+					.contenedorBotonDetalles {
+						justify-content: center;
+						display: flex;
+						margin-bottom: 1rem;
+
+						>a {
+							>button {
+								background: linear-gradient(pink, white);
+								border: 1px solid black;
+								border-radius: 0.25rem;
+								padding: 2px;
+								color: black;
+								margin: 5px 5px 5px;
+								font-family: "Lexend", sans-serif;
+								font-size: 0.845rem;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+@media only screen and (min-width: 0px) and (max-width: 423px) {
+	html {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+		align-self: stretch;
+		justify-content: space-around;
+
+		.headerTexto {
+			padding-top: 0.25rem;
+
+			>a {
+				>h1 {
+					font-size: 3.3rem;
+					padding-left: 0.2rem;
+				}
+			}
+		}
+
+		>nav {
+			justify-content: center;
+
+			>ul {
+				>li {
+					>a {
+						font-size: 1.3rem;
+						padding-left: 0.4rem;
+					}
+				}
+			}
+		}
+	}
+
+
+	.sliderBolsas {
+		>ul {
+			>li {
+				>img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.productos {
+		animation: none;
+
+		.productosCatalogo {
+			.contenedorCatalogoProductos {
+				justify-content: center;
+				display: flex;
+				width: 50%;
+
+				.contenedorProductos {
+					border: 3px solid pink;
+					background-color: rgba(255, 192, 203, 0.412);
+					margin: 0.5rem;
+					border-radius: 0.4rem;
+					width: 9rem;
+					height: fit-content;
+					padding: 0.5rem 0.5rem 0;
+					flex-wrap: wrap;
+
+
+					.contenedorProductosImg {
+						margin: 0;
+						height: fit-content;
+					}
+
+					.contenedorProductosTexto {
+						height: 3.375rem;
+
+						.contenedorProductosP {
+							font-size: 0.9rem;
+
+							>p {
+								font-size: 0.9rem;
+							}
+						}
+
+					}
+
+					.contenedorBotonDetalles {
+						display: flex;
+						justify-content: center;
+						height: 25%;
+						align-self: center;
+
+						>a {
+							>button {
+								background: linear-gradient(pink, white);
+								border: 1px solid black;
+								border-radius: 0.25rem;
+								padding: 2px;
+								color: black;
+								margin: 5px 0 5px;
+								font-family: "Lexend", sans-serif;
+								font-size: 0.845rem;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+	box-shadow: rgb(236, 116, 136) 0 0 10px 5px;
+
+	.headerTexto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: stretch;
+
+		>a {
+			>h1 {
+				font-family: "Dancing Script";
+				font-size: 3rem;
+				padding-bottom: 0.3rem;
+			}
+		}
+	}
+}
+
+//animación Título header
+@keyframes tituloEfecto {
+	0% {
+		color: black;
+	}
+
+	100% {
+		color: rgb(230, 61, 89);
+	}
+}

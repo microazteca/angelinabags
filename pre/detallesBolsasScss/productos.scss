@@ -1,0 +1,40 @@
+.contenedorBolsa {
+	display: flex;
+	font-family: "Lexend", sans-serif;
+	padding-top: 0.5rem;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	.contenedorBolsaTextos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.contenedorBolsaNombre {
+			font-size: 1rem;
+			animation: tituloEfecto 2s infinite alternate;
+			margin: 0 3rem 0;
+			text-align: center;
+		}
+
+		.contenedorBolsaPrecio {
+			font-size: 0.8rem;
+		}
+	}
+
+
+	.contenedorBolsaImagenes {
+		align-self: center;
+		justify-content: center;
+		margin-top: 1rem;
+
+
+		>img {
+			width: 100%;
+			border-radius: 1rem;
+			object-fit: contain;
+			padding: 0 .3rem;
+		}
+	}
+}

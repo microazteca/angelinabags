@@ -1,0 +1,23 @@
+@media only screen and (min-width: 931px) and (max-width: 1500px) {
+	.contenedorBolsa {
+		display: flex;
+		font-family: "Lexend", sans-serif;
+		padding-top: 0.5rem;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		.contenedorBolsaImagenes {
+			align-self: center;
+			justify-content: center;
+
+			>img {
+				width: 25%;
+				border-radius: 1rem;
+				object-fit: contain;
+				padding: 0 .3rem;
+				margin: 1rem 3rem 0;
+			}
+		}
+	}
+}

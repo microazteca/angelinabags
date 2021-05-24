@@ -1,0 +1,47 @@
+//flecha-arriba
+.flechaArriba {
+	>a {
+		>img {
+			height: 2rem;
+			width: 2rem;
+			background-color: rgba(249, 102, 129, 0.597);
+			bottom: 5rem;
+			right: 0.5rem;
+			z-index: 1000;
+			border-radius: 10%;
+			position: fixed;
+			transition: opacity 0.5s, visibility 0.5s;
+			visibility: hidden;
+			opacity: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&.active {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			&.inactive {
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+//flecha-regreso al inicio
+#backArrow {
+	>img {
+		position: absolute;
+		top: 4.2rem;
+		left: 0.3rem;
+		cursor: pointer;
+		width: 2.2rem;
+		transform: rotate(-90deg);
+		border-radius: 0.3rem;
+		-webkit-border-radius: 0.3rem;
+		z-index: 1000;
+		padding: 5px;
+	}
+}

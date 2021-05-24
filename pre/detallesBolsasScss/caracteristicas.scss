@@ -1,0 +1,41 @@
+.contenedorCaracteristicas {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0 2rem;
+	font-family: "Lexend", sans-serif;
+	align-items: center;
+
+	.contenedorCaracteristicasTitulo {
+		>h2 {
+			animation: tituloEfecto 2s infinite alternate;
+			align-self: center;
+			font-size: 1.5rem;
+		}
+	}
+
+	.contenedorCaracteristicasTabla {
+		padding-top: 1rem;
+
+		>table {
+			align-self: center;
+			border-collapse: collapse;
+			border: black 0 solid;
+			margin: 0;
+
+			tr {
+				border: black 2px solid;
+				font-size: 1.2rem;
+			}
+
+			#caract {
+				background-color: pink;
+				padding: 0.25rem;
+			}
+
+			#info {
+				width: 50%;
+				text-align: center;
+			}
+		}
+	}
+}

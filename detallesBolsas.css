@@ -111,6 +111,14 @@ header .headerTexto > a > h1 {
   padding-bottom: 0.3rem;
 }
 
+@keyframes tituloEfecto {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #e63d59;
+  }
+}
 .contenedorBolsa {
   display: flex;
   font-family: "Lexend", sans-serif;
@@ -198,13 +206,5 @@ header .headerTexto > a > h1 {
     object-fit: contain;
     padding: 0 0.3rem;
     margin: 1rem 3rem 0;
-  }
-}
-@keyframes tituloEfecto {
-  0% {
-    color: black;
-  }
-  100% {
-    color: #e63d59;
   }
 }

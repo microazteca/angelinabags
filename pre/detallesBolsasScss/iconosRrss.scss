@@ -1,0 +1,40 @@
+.logoFb,
+.logoInsta,
+.logoWhats {
+	>img {
+		display: inline-block;
+		padding: 5px;
+		width: 2.9rem;
+		border-radius: 0.7rem;
+		opacity: 0.79;
+	}
+}
+
+.logoFb {
+	bottom: 7rem;
+	right: 0.2rem;
+	position: fixed;
+	z-index: 1000;
+}
+
+.logoInsta {
+	bottom: 9.5rem;
+	right: 0.2rem;
+	position: fixed;
+	z-index: 1000;
+
+	>img {
+		border-radius: 1rem;
+	}
+}
+
+.logoWhats {
+	bottom: 12rem;
+	right: 0.2rem;
+	position: fixed;
+	z-index: 1000;
+
+	>img {
+		border-radius: 1rem;
+	}
+}

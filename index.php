@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link id="pageIcon" rel="shortcut icon" href="iconoLogo/iconoLogoAB.png">
+	<link id="pageIcon" rel="shortcut icon" href="media/img/iconoLogo/iconoLogoAB.png">
 	<script src="script.js"></script>
 	<title>Angeline Bags</title>
 </head>
@@ -19,14 +19,14 @@ $api = json_decode(file_get_contents($apiUrl));
 <body></body>
 <!-- includes-->
 <!--rrss íconos--><a href="https://www.facebook.com/Angeline-Bags-116249993559397/" target="_blank">
-	<div class="logoFb"> <img src="svg/facebookLogo.svg" al></div>
+	<div class="logoFb"> <img src="media/svg/facebookLogo.svg" al></div>
 </a><a href="https://www.instagram.com/angelinebags/?hl=es" target="_blank">
-	<div class="logoInsta"><img src="svg/instaLogo.svg" al></div>
+	<div class="logoInsta"><img src="media/svg/instaLogo.svg" al></div>
 </a><a href="http://wa.me/529981117490?text=Buen+d%c3%ada.+Quiero+tener+m%c3%a1s+informaci%c3%b3n+de+las+bolsas." target="_blank">
-	<div class="logoWhats"><img src="svg/whatsLogo.svg" al></div>
+	<div class="logoWhats"><img src="media/svg/whatsLogo.svg" al></div>
 </a>
 <!--flecha-arriba-->
-<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="svg/flechaIrArriba.svg" alt=""></a></div>
+<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="media/svg/flechaIrArriba.svg" alt=""></a></div>
 <!--header-->
 <header id="principal">
 	<div class="headerTexto">
@@ -44,10 +44,10 @@ $api = json_decode(file_get_contents($apiUrl));
 <!-- slider-->
 <div class="sliderBolsas">
 	<ul>
-		<li> <img src="imagenesSlider/bolsasSlider.jpg" al></li>
-		<li> <img src="imagenesSlider/bolsasSlider2.jpg" al></li>
-		<li> <img src="imagenesSlider/bolsasSlider.jpg" al></li>
-		<li> <img src="imagenesSlider/bolsasSlider2.jpg" al></li>
+		<li> <img src="media/img/slider/bolsasSlider.jpg" al></li>
+		<li> <img src="media/img/slider/bolsasSlider2.jpg" al></li>
+		<li> <img src="media/img/slider/bolsasSlider.jpg" al></li>
+		<li> <img src="media/img/slider/bolsasSlider2.jpg" al></li>
 	</ul>
 </div>
 <!-- productos-->

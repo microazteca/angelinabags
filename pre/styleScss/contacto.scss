@@ -1,0 +1,85 @@
+.contacto {
+	display: flex;
+	flex-direction: column;
+	font-family: "Lexend", sans-serif;
+	margin: 3rem 0 0;
+	padding: 0.5rem 0 1rem;
+	background-color: pink;
+
+	.contactoTitulo {
+		font-size: 1.5rem;
+		animation: tituloEfecto 2s infinite alternate;
+		align-self: center;
+	}
+
+	.contactoMapa {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		>h3 {
+			font-size: 1.25rem;
+			text-align: center;
+		}
+
+		>h4 {
+			font-size: 1.1rem;
+			padding: 0 20px 7px;
+			text-align: center;
+			color: rgb(230, 36, 68);
+		}
+
+		>iframe {
+			width: 100%;
+			height: 50vh;
+			align-self: center;
+			text-align: center;
+		}
+
+		.contenedorBotonMapa {
+			display: flex;
+			justify-content: center;
+
+			.botonMapa {
+				justify-content: center;
+				align-content: center;
+
+				>a {
+					>button {
+						background: linear-gradient(pink, white);
+						border: 1.75px solid black;
+						border-radius: 0.25rem;
+						padding: 3px;
+						color: black;
+						font-family: "Lexend", sans-serif;
+						font-size: 1.15rem;
+						cursor: pointer;
+						margin: 5px 1px 5px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	.contactoTelefono {
+		display: flex;
+		padding-bottom: 1.2rem;
+		flex-direction: column;
+		align-items: center;
+
+		.contactoTelefonoNumero {
+			>a {
+				font-size: 1.75rem;
+				text-align: center;
+			}
+		}
+
+		.contactoTelefonoTexto {
+			>h4 {
+				font-size: 1rem;
+				text-align: center;
+			}
+		}
+	}
+}

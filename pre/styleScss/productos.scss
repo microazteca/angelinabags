@@ -1,0 +1,91 @@
+.productos {
+	display: flex;
+	padding-top: 3rem;
+	font-family: "Lexend", sans-serif;
+	flex-direction: column;
+	align-items: center;
+
+	.productosTitulo {
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+		animation: tituloEfecto 2s infinite alternate;
+	}
+
+	.productosCatalogo {
+		display: flex;
+		flex-wrap: wrap;
+
+		.contenedorCatalogoProductos {
+			padding: .5rem 0;
+
+			.contenedorProductos {
+				width: 200px;
+				height: 400px;
+				padding: 0.5rem 0.5rem 0;
+				border: 3px solid pink;
+				background-color: rgba(255, 192, 203, 0.412);
+				border-radius: 0.5rem;
+
+				.contenedorProductosImg {
+					>a {
+						>img {
+							width: 100%;
+							object-fit: cover;
+							border-radius: 5px;
+						}
+					}
+				}
+
+				.contenedorProductosTexto {
+					.contenedorProductosP {
+						height: 20%;
+					}
+				}
+
+				.contenedorBotonDetalles {
+					bottom: .1rem;
+					position: relative;
+					justify-content: center;
+					display: flex;
+
+					>a {
+						>button {
+							background: linear-gradient(pink, white);
+							border: 1px solid black;
+							border-radius: 0.25rem;
+							padding: 2px;
+							color: black;
+							margin: 5px 0 5px;
+							font-family: "Lexend", sans-serif;
+							font-size: 1rem;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.productos {
+		.productosCatalogo {
+			.contenedorCatalogoProductos {
+				justify-content: center;
+				display: flex;
+
+				.contenedorProductos {
+					-webkit-transition: 0.3s ease-in-out;
+					transition: transform 0.3s ease-in-out;
+
+					&:hover {
+						-webkit-transform: scale(1.025);
+						transform: scale(1.025);
+						background-color: pink;
+						border-radius: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}

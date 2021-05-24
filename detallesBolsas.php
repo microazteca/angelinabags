@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="detallesBolsas.css">
-	<link id="pageIcon" rel="shortcut icon" href="iconoLogo/iconoLogoAB.png">
+	<link id="pageIcon" rel="shortcut icon" href="media/img/iconoLogo/iconoLogoAB.png">
 	<script src="script.js"></script>
 	<title>Angeline Bags | Detalles</title>
 </head>
@@ -21,16 +21,16 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 <body>
 	<!--rrss íconos-->
 	<a href="https://www.facebook.com/Angeline-Bags-116249993559397/" target="_blank">
-		<div class="logoFb"> <img src="svg/facebookLogo.svg" alt=""></div>
+		<div class="logoFb"> <img src="media/svg/facebookLogo.svg" alt=""></div>
 	</a><a href="https://www.instagram.com/angelinebags/?hl=es" target="_blank">
-		<div class="logoInsta"><img src="svg/instaLogo.svg" alt=""></div>
+		<div class="logoInsta"><img src="media/svg/instaLogo.svg" alt=""></div>
 	</a><a href="" target="_blank">
-		<div class="logoWhats"><img src="svg/whatsLogo.svg" alt=""></div>
+		<div class="logoWhats"><img src="media/svg/whatsLogo.svg" alt=""></div>
 	</a>
 	<!--flecha-arriba-->
-	<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="svg/flechaIrArriba.svg" alt=""></a></div>
+	<div class="flechaArriba"><a href="#principal"> <img id="flechaArriba" src="media/svg/flechaIrArriba.svg" alt=""></a></div>
 	<!--flecha-regreso al inicio-->
-	<a id="backArrow" href="index.php#productos"><img src="svg/flechaIrArriba.svg" alt=""></a>
+	<a id="backArrow" href="index.php#productos"><img src="media/svg/flechaIrArriba.svg" alt=""></a>
 	<!--header-->
 	<header id="principal">
 		<div class="headerTexto">
