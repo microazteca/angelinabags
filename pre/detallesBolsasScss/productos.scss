@@ -4,6 +4,7 @@
 	padding-top: 0.5rem;
 	align-items: center;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
 
 	.contenedorBolsaTextos {
@@ -23,18 +24,34 @@
 		}
 	}
 
+	.contenedorBolsaGrafico {
+		background-color: pink;
+		display: flex;
+		flex-wrap: wrap;
 
-	.contenedorBolsaImagenes {
-		align-self: center;
-		justify-content: center;
-		margin-top: 1rem;
+		.contenedorBolsaImagenes {
+			width: 9rem;
+			display: flex;
+			background-color: green;
+			justify-content: center;
 
+			.contenedorIndBolsa {
+				align-self: center;
+				background-color: purple;
+				height: fit-content;
+				flex-wrap: wrap;
 
-		>img {
-			width: 100%;
-			border-radius: 1rem;
-			object-fit: contain;
-			padding: 0 .3rem;
+				.contenedorImgBolsa {
+					background-color: salmon;
+
+					>img {
+						width: 100%;
+						border-radius: 1rem;
+						object-fit: cover;
+						padding: 0 .3rem;
+					}
+				}
+			}
 		}
 	}
 }

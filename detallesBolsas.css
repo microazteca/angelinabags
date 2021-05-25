@@ -125,6 +125,7 @@ header .headerTexto > a > h1 {
   padding-top: 0.5rem;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .contenedorBolsa .contenedorBolsaTextos {
@@ -141,15 +142,30 @@ header .headerTexto > a > h1 {
 .contenedorBolsa .contenedorBolsaTextos .contenedorBolsaPrecio {
   font-size: 0.8rem;
 }
-.contenedorBolsa .contenedorBolsaImagenes {
-  align-self: center;
-  justify-content: center;
-  margin-top: 1rem;
+.contenedorBolsa .contenedorBolsaGrafico {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
 }
-.contenedorBolsa .contenedorBolsaImagenes > img {
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+  width: 9rem;
+  display: flex;
+  background-color: green;
+  justify-content: center;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa {
+  align-self: center;
+  background-color: purple;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+  background-color: salmon;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
   width: 100%;
   border-radius: 1rem;
-  object-fit: contain;
+  object-fit: cover;
   padding: 0 0.3rem;
 }
 
@@ -196,12 +212,15 @@ header .headerTexto > a > h1 {
     flex-direction: column;
     justify-content: center;
   }
-  .contenedorBolsa .contenedorBolsaImagenes {
+  .contenedorBolsa .contenedorBolsaGrafico {
+    width: 100%;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
     align-self: center;
     justify-content: center;
   }
-  .contenedorBolsa .contenedorBolsaImagenes > img {
-    width: 25%;
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
+    width: 100%;
     border-radius: 1rem;
     object-fit: contain;
     padding: 0 0.3rem;

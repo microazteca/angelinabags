@@ -49,9 +49,16 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 				<h2>$<?php echo $api->price ?>.00 mxn</h2>
 			</div>
 		</div>
-		<div class="contenedorBolsaImagenes">
+
+		<div class="contenedorBolsaGrafico">
 			<?php foreach ($api->images as $image) : ?>
-				<img src="<?php echo $image->url ?>" alt="">
+				<div class="contenedorBolsaImagenes">
+					<div class="contenedorIndBolsa">
+						<div class="contenedorImgBolsa">
+							<img src="<?php echo $image->url ?>" alt="">
+						</div>
+					</div>
+				</div>
 			<?php endforeach ?>
 		</div>
 	</div>
