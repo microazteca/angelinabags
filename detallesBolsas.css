@@ -125,8 +125,6 @@ header .headerTexto > a > h1 {
   padding-top: 0.5rem;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .contenedorBolsa .contenedorBolsaTextos {
   display: flex;
@@ -143,30 +141,22 @@ header .headerTexto > a > h1 {
   font-size: 0.8rem;
 }
 .contenedorBolsa .contenedorBolsaGrafico {
-  background-color: pink;
   display: flex;
   flex-wrap: wrap;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
-  width: 9rem;
-  display: flex;
-  background-color: green;
-  justify-content: center;
+  margin: 0 0.5rem;
 }
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa {
-  align-self: center;
-  background-color: purple;
-  height: fit-content;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
-  background-color: salmon;
+  height: 100%;
 }
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
   width: 100%;
   border-radius: 1rem;
   object-fit: cover;
-  padding: 0 0.3rem;
+  padding: 0.3rem 0.3rem 0;
 }
 
 .contenedorCaracteristicas {
@@ -203,27 +193,46 @@ header .headerTexto > a > h1 {
   text-align: center;
 }
 
-@media only screen and (min-width: 931px) and (max-width: 1500px) {
-  .contenedorBolsa {
-    display: flex;
-    font-family: "Lexend", sans-serif;
-    padding-top: 0.5rem;
-    align-items: center;
-    flex-direction: column;
+@media only screen and (max-width: 767px) {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+    width: 50%;
+    height: fit-content;
     justify-content: center;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .contenedorBolsa .contenedorBolsaGrafico {
-    width: 100%;
+    margin: 0 1rem;
   }
   .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
-    align-self: center;
-    justify-content: center;
+    width: 33.3%;
+    display: flex;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
-    width: 100%;
-    border-radius: 1rem;
-    object-fit: contain;
-    padding: 0 0.3rem;
-    margin: 1rem 3rem 0;
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+    height: fit-content;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contenedorBolsa .contenedorBolsaGrafico {
+    margin: 0 1.5rem;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+    width: 25%;
+    display: flex;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+    height: fit-content;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contenedorBolsa .contenedorBolsaGrafico {
+    margin: 0 2rem;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+    width: 20%;
+    display: flex;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+    height: fit-content;
   }
 }

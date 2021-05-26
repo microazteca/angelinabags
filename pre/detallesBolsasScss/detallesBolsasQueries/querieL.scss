@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1200px) {
+	.contenedorBolsa {
+		.contenedorBolsaGrafico {
+			margin: 0 2rem;
+			.contenedorBolsaImagenes {
+				width: 20%;
+				display: flex;
+
+				.contenedorIndBolsa {
+
+					.contenedorImgBolsa {
+						height: fit-content;
+					}
+				}
+			}
+		}
+	}
+}

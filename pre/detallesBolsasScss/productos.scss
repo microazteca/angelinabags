@@ -4,8 +4,6 @@
 	padding-top: 0.5rem;
 	align-items: center;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
 
 	.contenedorBolsaTextos {
 		display: flex;
@@ -25,30 +23,22 @@
 	}
 
 	.contenedorBolsaGrafico {
-		background-color: pink;
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0 .5rem;
 
 		.contenedorBolsaImagenes {
-			width: 9rem;
-			display: flex;
-			background-color: green;
-			justify-content: center;
 
 			.contenedorIndBolsa {
-				align-self: center;
-				background-color: purple;
-				height: fit-content;
-				flex-wrap: wrap;
-
+				width: 100%;
+				height: 100%;
 				.contenedorImgBolsa {
-					background-color: salmon;
-
+					height: 100%;
 					>img {
 						width: 100%;
 						border-radius: 1rem;
 						object-fit: cover;
-						padding: 0 .3rem;
+						padding: .3rem .3rem 0;
 					}
 				}
 			}

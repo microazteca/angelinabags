@@ -11,7 +11,10 @@
 @import "detallesBolsasScss/caracteristicas.scss";
 
 // imports Queries
-@import "detallesBolsasScss/detallesBolsasQueries/querieXXL.scss"
+@import "detallesBolsasScss/detallesBolsasQueries/querieXS.scss";
+@import "detallesBolsasScss/detallesBolsasQueries/querieS.scss";
+@import "detallesBolsasScss/detallesBolsasQueries/querieM.scss";
+@import "detallesBolsasScss/detallesBolsasQueries/querieL.scss";
 
 // Header
 
