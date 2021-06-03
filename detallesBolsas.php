@@ -49,7 +49,7 @@ $api = json_decode(file_get_contents($apiUrl . "?id=" . $id))[0];
 				<h2>$<?php echo $api->price ?>.00 mxn</h2>
 			</div>
 		</div>
-
+21
 		<div class="contenedorBolsaGrafico">
 			<?php foreach ($api->images as $image) : ?>
 				<div class="contenedorBolsaImagenes">
