@@ -127,18 +127,18 @@ header .headerTexto > a > h1 {
   align-items: center;
   flex-direction: column;
 }
-.contenedorBolsa .contenedorBolsaTextos {
+.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contenedorBolsa .contenedorBolsaTextos .contenedorBolsaNombre {
+.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos .contenedorBolsaNombre {
   font-size: 1rem;
   animation: tituloEfecto 2s infinite alternate;
   margin: 0 3rem 0;
   text-align: center;
 }
-.contenedorBolsa .contenedorBolsaTextos .contenedorBolsaPrecio {
+.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos .contenedorBolsaPrecio {
   font-size: 0.8rem;
 }
 .contenedorBolsa .contenedorBolsaGrafico {
@@ -146,14 +146,17 @@ header .headerTexto > a > h1 {
   flex-wrap: wrap;
   margin: 0 0.5rem;
 }
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa {
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes {
+  width: 100%;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa {
   width: 100%;
   height: 100%;
 }
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
   height: 100%;
 }
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
   width: 100%;
   border-radius: 1rem;
   object-fit: cover;
@@ -195,7 +198,7 @@ header .headerTexto > a > h1 {
 }
 
 @media only screen and (max-width: 767px) {
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
     width: 50%;
     height: fit-content;
     justify-content: center;
@@ -205,11 +208,11 @@ header .headerTexto > a > h1 {
   .contenedorBolsa .contenedorBolsaGrafico {
     margin: 0 1rem;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
     width: 33.3%;
     display: flex;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
   }
 }
@@ -217,11 +220,11 @@ header .headerTexto > a > h1 {
   .contenedorBolsa .contenedorBolsaGrafico {
     margin: 0 1.5rem;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
     width: 25%;
     display: flex;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
   }
 }
@@ -229,11 +232,14 @@ header .headerTexto > a > h1 {
   .contenedorBolsa .contenedorBolsaGrafico {
     margin: 0 2rem;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes {
-    width: 20%;
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
+    width: 25%;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes {
+    width: 100%;
     display: flex;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
   }
 }

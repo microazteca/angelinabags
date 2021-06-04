@@ -1,10 +1,9 @@
-const aplicacion = document.querySelector(".contenedorProductos");
-const getUrl = new URLSearchParams(window.location.search)
 const url = "https://salonrizo.com/tools/angelinebags/php/api/";
 fetch(url)
 	.then(resp => resp.json())
 	.then(data => {
 		data.forEach(bolsa => {
+			console.log(data);
 			let container = document.createElement("div")
 			container.innerHTML =
 				`
@@ -21,7 +20,7 @@ fetch(url)
 						</div>
 					</div>
 					<div class = "contenedorBotonDetalles">
-						<a href="detallesBolsas.php">
+						<a href = "detallesBolsas.html?id=${bolsa.id}">
        <button>Ver detalles</button>
       </a>
 					</div>

@@ -2,14 +2,19 @@
 	.contenedorBolsa {
 		.contenedorBolsaGrafico {
 			margin: 0 2rem;
-			.contenedorBolsaImagenes {
-				width: 20%;
-				display: flex;
 
-				.contenedorIndBolsa {
+			.contenedorBolsaApi {
+				width: 25%;
 
-					.contenedorImgBolsa {
-						height: fit-content;
+				.contenedorBolsaImagenes {
+					width: 100%;
+					display: flex;
+
+					.contenedorIndBolsa {
+
+						.contenedorImgBolsa {
+							height: fit-content;
+						}
 					}
 				}
 			}

@@ -5,40 +5,48 @@
 	align-items: center;
 	flex-direction: column;
 
-	.contenedorBolsaTextos {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.contenedorBolsaTitulo {
+		.contenedorBolsaTextos {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-		.contenedorBolsaNombre {
-			font-size: 1rem;
-			animation: tituloEfecto 2s infinite alternate;
-			margin: 0 3rem 0;
-			text-align: center;
-		}
+			.contenedorBolsaNombre {
+				font-size: 1rem;
+				animation: tituloEfecto 2s infinite alternate;
+				margin: 0 3rem 0;
+				text-align: center;
+			}
 
-		.contenedorBolsaPrecio {
-			font-size: 0.8rem;
+			.contenedorBolsaPrecio {
+				font-size: 0.8rem;
+			}
 		}
 	}
+
 
 	.contenedorBolsaGrafico {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 .5rem;
 
-		.contenedorBolsaImagenes {
-
-			.contenedorIndBolsa {
+		.contenedorBolsaApi {
+			.contenedorBolsaImagenes {
 				width: 100%;
-				height: 100%;
-				.contenedorImgBolsa {
+
+				.contenedorIndBolsa {
+					width: 100%;
 					height: 100%;
-					>img {
-						width: 100%;
-						border-radius: 1rem;
-						object-fit: cover;
-						padding: .3rem .3rem 0;
+
+					.contenedorImgBolsa {
+						height: 100%;
+
+						>img {
+							width: 100%;
+							border-radius: 1rem;
+							object-fit: cover;
+							padding: .3rem .3rem 0;
+						}
 					}
 				}
 			}
