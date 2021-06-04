@@ -17,7 +17,6 @@ fetch(`${url}/?id=${id}`)
      </div>
     </div>
 			`;
-			console.log(data);
 			container.classList.add("contenedorBolsaApi");
 			contenedorGrafico = document.querySelector(".contenedorBolsaGrafico")
 			contenedorGrafico.appendChild(container);

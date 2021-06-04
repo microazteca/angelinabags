@@ -3,7 +3,6 @@ fetch(url)
 	.then(resp => resp.json())
 	.then(data => {
 		data.forEach(bolsa => {
-			console.log(data);
 			let container = document.createElement("div")
 			container.innerHTML =
 				`
