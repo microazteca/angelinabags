@@ -12,7 +12,7 @@ fetch(`${url}/?id=${id}`)
     <div class="contenedorBolsaImagenes">
      <div class="contenedorIndBolsa">
       <div class="contenedorImgBolsa">
-       <img src="${images.url}"/>
+       <img class="imgBolsas" src="${images.url}"/>
       </div>
      </div>
     </div>
