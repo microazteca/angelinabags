@@ -62,7 +62,7 @@ ul {
   background-color: rgba(249, 102, 129, 0.597);
   bottom: 5rem;
   right: 0.5rem;
-  z-index: 1000;
+  z-index: 100;
   border-radius: 10%;
   position: fixed;
   transition: opacity 0.5s, visibility 0.5s;
@@ -90,7 +90,7 @@ ul {
   transform: rotate(-90deg);
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
-  z-index: 1000;
+  z-index: 100;
   padding: 5px;
 }
 
@@ -160,19 +160,24 @@ header .headerTexto > a > h1 {
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
   width: 100%;
   border-radius: 1rem;
-  object-fit: cover;
   padding: 0.3rem 0.3rem 0;
   z-index: 1;
 }
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 25rem;
+  height: 10rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
+  margin-top: 4.5rem;
+  top: 25%;
+  left: 35%;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active .containerArrow {
+  display: none;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active > img {
+  position: relative;
 }
 .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active::after {
   content: "";
@@ -181,8 +186,44 @@ header .headerTexto > a > h1 {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   z-index: 0;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow {
+  z-index: 1;
+  display: none;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgRight {
+  position: relative;
+  top: 1.55rem;
+  cursor: pointer;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgRight .arrowImgRight {
+  width: 3rem;
+  height: 3rem;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgLeft {
+  left: -28.25rem;
+  top: -2rem;
+  position: relative;
+  cursor: pointer;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgLeft .arrowImgLeft {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(180deg);
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerClose {
+  position: relative;
+  cursor: pointer;
+  top: -20rem;
+  right: -27rem;
+  width: 3rem;
+  height: 3rem;
+}
+.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerClose .closeImg {
+  width: 2rem;
+  height: 2rem;
 }
 
 .contenedorCaracteristicas {
@@ -225,6 +266,31 @@ header .headerTexto > a > h1 {
     height: fit-content;
     justify-content: center;
   }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 19rem;
+    height: 19rem;
+    top: 6.5%;
+    left: 2.5%;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 20.5rem;
+    height: 19.5rem;
+    top: 6%;
+    left: 6%;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 20.5rem;
+    height: 19rem;
+    top: 6%;
+    left: 11%;
+    z-index: 100;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contenedorBolsa .contenedorBolsaGrafico {
@@ -237,6 +303,13 @@ header .headerTexto > a > h1 {
   .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
   }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 21rem;
+    height: 19rem;
+    top: 6%;
+    left: 28%;
+    z-index: 100;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contenedorBolsa .contenedorBolsaGrafico {
@@ -248,6 +321,13 @@ header .headerTexto > a > h1 {
   }
   .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 21rem;
+    height: 18rem;
+    top: 7.5%;
+    left: 35%;
+    z-index: 100;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -264,5 +344,12 @@ header .headerTexto > a > h1 {
   }
   .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
     height: fit-content;
+  }
+  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+    width: 21rem;
+    height: 18rem;
+    top: 14%;
+    left: 38%;
+    z-index: 100;
   }
 }

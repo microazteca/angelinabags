@@ -13,6 +13,20 @@ fetch(`${url}/?id=${id}`)
      <div class="contenedorIndBolsa">
       <div class="contenedorImgBolsa">
        <img class="imgBolsas" src="${images.url}"/>
+							<div class="containerArrow">
+								<div class="containerArrowImgRight">
+									<img class="arrowImgRight"
+									src="../../media/svg/modalArrow.svg"/>
+									</div>
+								<div class="containerArrowImgLeft">	
+									<img class="arrowImgLeft"
+									src="../../media/svg/modalArrow.svg"/>
+									</div>
+								<div class="containerClose">
+									<img class="closeImg"
+									src="../../media/svg/closeImg.svg"/>
+									</div>
+							</div>
       </div>
      </div>
     </div>
@@ -21,7 +35,29 @@ fetch(`${url}/?id=${id}`)
 			contenedorGrafico = document.querySelector(".contenedorBolsaGrafico")
 			contenedorGrafico.appendChild(container);
 		});
-	})
+		/// ---abrir modal---
+		document.querySelectorAll(".contenedorImgBolsa img").forEach((el) => {
+			el.addEventListener("click", function (ev) {
+				ev.stopPropagation();
+				this.parentNode.classList.add("modal_active");
+			});
+		});
+
+		/// ---cerrar modal---
+		document.querySelectorAll(".contenedorImgBolsa").forEach((el) => {
+			el.addEventListener("click", function (ev) {
+				ev.stopPropagation();
+				this.classList.remove("modal_active");
+			});
+		});
+		// document.querySelectorAll(".containerClose .modal_active").forEach((el) => {
+		// 	el.addEventListener("click", function (ev) {
+		// 		ev.stopPropagation();
+		// 		document.querySelectorAll(".contenedorImgBolsa .modal_active").classList.remove("modal_active");
+		// 	});
+		// });
+	});
+
 fetch(`${url}/?id=${id}`)
 	.then(resp => resp.json())
 	.then(data => {

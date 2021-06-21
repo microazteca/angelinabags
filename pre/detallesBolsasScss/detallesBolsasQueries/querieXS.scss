@@ -11,7 +11,59 @@
 
 					.contenedorIndBolsa {
 
-						.contenedorImgBolsa {}
+						.contenedorImgBolsa {
+							&.modal_active {
+								width: 19rem;
+								height: 19rem;
+								top: 6.5%;
+								left: 2.5%;
+								z-index: 100;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+	.contenedorBolsa {
+		.contenedorBolsaGrafico {
+			.contenedorBolsaApi {
+				.contenedorBolsaImagenes {
+					.contenedorIndBolsa {
+						.contenedorImgBolsa {
+							&.modal_active {
+								width: 20.5rem;
+								height: 19.5rem;
+								top: 6%;
+								left: 6%;
+								z-index: 100;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+	.contenedorBolsa {
+		.contenedorBolsaGrafico {
+			.contenedorBolsaApi {
+				.contenedorBolsaImagenes {
+					.contenedorIndBolsa {
+						.contenedorImgBolsa {
+							&.modal_active {
+								width: 20.5rem;
+								height: 19rem;
+								top: 6%;
+								left: 11%;
+								z-index: 100;
+							}
+						}
 					}
 				}
 			}

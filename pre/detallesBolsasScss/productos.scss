@@ -42,33 +42,87 @@
 					.contenedorImgBolsa {
 						height: 100%;
 
+
 						>img {
 							width: 100%;
 							border-radius: 1rem;
-							object-fit: cover;
 							padding: .3rem .3rem 0;
 							z-index: 1;
 						}
 
-						&.modal_active{
+						&.modal_active {
 							position: fixed;
-							width: 100vw;
-							height: 100vh;
+							width: 25rem;
+							height: 10rem;
 							display: flex;
 							align-items: center;
-							justify-content: center;
-							top: 0;
-							left: 0;
+							margin-top: 4.5rem;
+							top: 25%;
+							left: 35%;
 
-							&::after{
+							.containerArrow{
+								display: none;
+							}
+
+							>img {
+								position: relative;
+
+							}
+
+							&::after {
 								content: "";
 								position: fixed;
 								width: 100vw;
 								height: 100vh;
 								top: 0;
 								left: 0;
-								background-color: rgba(0, 0, 0, 0.5);
+								background-color: rgba(0, 0, 0, 1);
 								z-index: 0;
+
+							}
+						}
+
+						.containerArrow {
+							z-index: 1;
+							display: none;
+
+
+							.containerArrowImgRight {
+								position: relative;
+								top: 1.55rem;
+								cursor: pointer;
+
+								.arrowImgRight {
+									width: 3rem;
+									height: 3rem;
+								}
+							}
+
+							.containerArrowImgLeft {
+								left: -28.25rem;
+								top: -2rem;
+								position: relative;
+								cursor: pointer;
+
+								.arrowImgLeft {
+									width: 3rem;
+									height: 3rem;
+									transform: rotate(180deg);
+								}
+							}
+
+							.containerClose {
+								position: relative;
+								cursor: pointer;
+								top: -20rem;
+								right: -27rem;
+								width: 3rem;
+								height: 3rem;
+
+								.closeImg {
+									width: 2rem;
+									height: 2rem;
+								}
 							}
 						}
 					}

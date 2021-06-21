@@ -14,7 +14,15 @@
 					.contenedorIndBolsa {
 
 						.contenedorImgBolsa {
-							height: fit-content;	
+							height: fit-content;
+
+							&.modal_active {
+								width: 21rem;
+								height: 18rem;
+								top: 14%;
+								left: 38%;
+								z-index: 100;
+							}
 						}
 					}
 				}
