@@ -1,14 +1,13 @@
-const aplicacion = document.querySelector('.productosCatalogo');
-const getUrl = new URLSearchParams(window.location.search)
-id = getUrl.get('id')
-const url = 'https://salonrizo.com/tools/angelinebags/php/api';
+const aplicacion = document.querySelector(".productosCatalogo");
+const getUrl = new URLSearchParams(window.location.search);
+id = getUrl.get("id");
+const url = "https://salonrizo.com/tools/angelinebags/php/api";
 fetch(`${url}/?id=${id}`)
-	.then(resp => resp.json())
-	.then(data => {
-		data[0].images.forEach(images => {
-			let container = document.createElement("div")
-			container.innerHTML =
-				`
+ .then((resp) => resp.json())
+ .then((data) => {
+  data[0].images.forEach((images) => {
+   let container = document.createElement("div");
+   container.innerHTML = `
     <div class="contenedorBolsaImagenes">
      <div class="contenedorIndBolsa">
       <div class="contenedorImgBolsa">
@@ -31,40 +30,31 @@ fetch(`${url}/?id=${id}`)
      </div>
     </div>
 			`;
-			container.classList.add("contenedorBolsaApi");
-			contenedorGrafico = document.querySelector(".contenedorBolsaGrafico")
-			contenedorGrafico.appendChild(container);
-		});
-		/// ---abrir modal---
-		document.querySelectorAll(".contenedorImgBolsa img").forEach((el) => {
-			el.addEventListener("click", function (ev) {
-				ev.stopPropagation();
-				this.parentNode.classList.add("modal_active");
-			});
-		});
+   container.classList.add("contenedorBolsaApi");
+   contenedorGrafico = document.querySelector(".contenedorBolsaGrafico");
+   contenedorGrafico.appendChild(container);
+  });
+  document.querySelectorAll(".contenedorImgBolsa img").forEach((el) => {
+   el.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+    this.parentNode.classList.add("modal_active");
+    // alert("click");
+   });
+  });
 
-		/// ---cerrar modal---
-		document.querySelectorAll(".contenedorImgBolsa").forEach((el) => {
-			el.addEventListener("click", function (ev) {
-				ev.stopPropagation();
-				this.classList.remove("modal_active");
-			});
-		});
-		// document.querySelectorAll(".containerClose .modal_active").forEach((el) => {
-		// 	el.addEventListener("click", function (ev) {
-		// 		ev.stopPropagation();
-		// 		document.querySelectorAll(".contenedorImgBolsa .modal_active").classList.remove("modal_active");
-		// 	});
-		// });
-	});
-
+  document.querySelectorAll(".contenedorImgBolsa").forEach((el) => {
+   el.addEventListener("click", function (ev) {
+    this.classList.remove("modal_active");
+   });
+  });
+  //
+ });
 fetch(`${url}/?id=${id}`)
-	.then(resp => resp.json())
-	.then(data => {
-		data.forEach(bolsa => {
-			let container2 = document.createElement("div")
-			container2.innerHTML =
-				`
+ .then((resp) => resp.json())
+ .then((data) => {
+  data.forEach((bolsa) => {
+   let container2 = document.createElement("div");
+   container2.innerHTML = `
 				<div class="contenedorBolsaTextos">
     	<div class="contenedorBolsaNombre">
      	<h2>${bolsa.description}</h2>
@@ -73,14 +63,13 @@ fetch(`${url}/?id=${id}`)
      	<h2>$${bolsa.price}.00 MXN</h2>
     	</div>
 				</div>
-			`
-			container2.classList.add("contenedorBolsaTextos");
-			contenedorBolsaT = document.querySelector(".contenedorBolsaTitulo")
-			contenedorBolsaT.appendChild(container2);
+			`;
+   container2.classList.add("contenedorBolsaTextos");
+   contenedorBolsaT = document.querySelector(".contenedorBolsaTitulo");
+   contenedorBolsaT.appendChild(container2);
 
-			let container3 = document.createElement("div")
-			container3.innerHTML =
-				`
+   let container3 = document.createElement("div");
+   container3.innerHTML = `
 			<div class="contenedorCaracteristicasTabla">
     <table>
      <tr>
@@ -106,8 +95,8 @@ fetch(`${url}/?id=${id}`)
     </table>
    </div>
 			`;
-			container3.classList.add("contenedorCaracteristicasTabla");
-			contenedorTabla = document.querySelector(".contenedorCaracteristicas")
-			contenedorTabla.appendChild(container3);
-		});
-	})
+   container3.classList.add("contenedorCaracteristicasTabla");
+   contenedorTabla = document.querySelector(".contenedorCaracteristicas");
+   contenedorTabla.appendChild(container3);
+  });
+ });
