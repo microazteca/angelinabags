@@ -1,23 +1,23 @@
-.sliderBolsas {
+.slider-container {
 	width: 100%;
 	margin: auto;
 	padding: 1rem 0 0;
 	overflow: hidden;
 
-	>ul {
+	&__media {
 		display: flex;
 		padding: 0;
 		width: 400%;
 		animation: sliderBolsas 15s linear infinite alternate;
+	}
 
-		>li {
-			width: 100%;
-			text-align: center;
+	&__media-mov {
+		width: 100%;
+		text-align: center;
+	}
 
-			>img {
-				width: 50%;
-			}
-		}
+	&__media-mov-img {
+		width: 50%;
 	}
 }
 

@@ -1,30 +1,32 @@
-.flechaArriba {
-	>a {
-		>img {
-			height: 2rem;
-			width: 2rem;
-			background-color: rgba(249, 102, 129, 0.597);
-			bottom: 5rem;
-			right: 0.5rem;
-			z-index: 1000;
-			border-radius: 10%;
-			position: fixed;
-			transition: opacity 0.5s, visibility 0.5s;
+.arrow-top {
+	height: 2rem;
+	width: 2rem;
+	bottom: 5rem;
+	right: 0.5rem;
+	position: fixed;
+	z-index: 1000;
+
+	#arrowTop__svg {
+		height: 2rem;
+		width: 2rem;
+		background-color: rgba(249, 102, 129, 0.597);
+		border-radius: 10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: opacity 0.5s,
+			visibility 0.5s;
+		visibility: hidden;
+		opacity: 0;
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		&.inactive {
 			visibility: hidden;
 			opacity: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			&.active {
-				visibility: visible;
-				opacity: 1;
-			}
-
-			&.inactive {
-				visibility: hidden;
-				opacity: 0;
-			}
 		}
 	}
 }

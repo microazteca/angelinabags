@@ -4,8 +4,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		flechaArriba.classList = "active";
+		arrowTop__svg.classList = "active";
 	} else {
-		flechaArriba.classList = "inactive";
+		arrowTop__svg.classList = "inactive";
 	}
 }

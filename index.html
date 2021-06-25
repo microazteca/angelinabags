@@ -10,97 +10,114 @@
   <link
    id="pageIcon"
    rel="shortcut icon"
-   href="media/img/iconoLogo/iconoLogoAB.png"
+   href="media/img/icono/logo-Icon.png"
   />
  </head>
  <body>
   <!-- includes-->
   <!--rrss íconos-->
-  <a
-   href="https://www.facebook.com/Angeline-Bags-116249993559397/"
-   target="_blank"
-  >
-   <div class="logoFb"><img src="media/svg/facebookLogo.svg" al /></div> </a
-  ><a href="https://www.instagram.com/angelinebags/?hl=es" target="_blank">
-   <div class="logoInsta"><img src="media/svg/instaLogo.svg" al /></div> </a
-  ><a
-   href="http://wa.me/529981117490?text=Buen+d%c3%ada.+Quiero+tener+m%c3%a1s+informaci%c3%b3n+de+las+bolsas."
-   target="_blank"
-  >
-   <div class="logoWhats"><img src="media/svg/whatsLogo.svg" al /></div>
-  </a>
+  <div class="logos-container">
+   <a
+    href="https://www.facebook.com/Angeline-Bags-116249993559397/"
+    target="_blank"
+   >
+    <img class="logos-container__logo-fb-svg" src="media/svg/logo-fb.svg" />
+   </a>
+   <a href="https://www.instagram.com/angelinebags/?hl=es" target="_blank">
+    <img
+     class="logos-container__logo-insta-svg"
+     src="media/svg/logo-insta.svg"
+    />
+   </a>
+   <a
+    href="http://wa.me/529981117490?text=Buen+d%c3%ada.+Quiero+tener+m%c3%a1s+informaci%c3%b3n+de+las+bolsas."
+    target="_blank"
+   >
+    <img
+     class="logos-container__logo-whats-svg"
+     src="media/svg/logo-whats.svg"
+    />
+   </a>
+  </div>
+
   <!--flecha-arriba-->
-  <div class="flechaArriba">
+  <div class="arrow-top">
    <a href="#principal">
-    <img id="flechaArriba" src="media/svg/flechaIrArriba.svg" alt=""
+    <img id="arrowTop__svg" src="media/svg/arrow-top.svg" alt=""
    /></a>
   </div>
   <!--header-->
-  <header id="principal">
-   <div class="headerTexto">
+  <header class="header-container" id="principal">
+   <div class="header-container__title">
     <a href="index.html">
      <h1>Angeline Bags</h1>
     </a>
    </div>
-   <nav>
-    <ul>
-     <li><a href="#productos">PRODUCTOS </a></li>
-     <li><a href="#contacto">CONTACTO</a></li>
-    </ul>
+   <nav class="header-container__nav">
+    <a class="header-container__nav-a" href="#productos">PRODUCTOS </a>
+    <a class="header-container__nav-a" href="#contacto">CONTACTO</a>
    </nav>
   </header>
   <!-- slider-->
-  <div class="sliderBolsas">
-   <ul>
-    <li><img src="media/img/slider/bolsasSlider.jpg" al /></li>
-    <li><img src="media/img/slider/bolsasSlider2.jpg" al /></li>
-    <li><img src="media/img/slider/bolsasSlider.jpg" al /></li>
-    <li><img src="media/img/slider/bolsasSlider2.jpg" al /></li>
-   </ul>
+  <div class="slider-container">
+   <div class="slider-container__media">
+    <div class="slider-container__media-mov">
+     <img
+      class="slider-container__media-mov-img"
+      src="media/img/slider/slider-img-1.jpg"
+      al
+     />
+    </div>
+    <div class="slider-container__media-mov">
+     <img
+      class="slider-container__media-mov-img"
+      src="media/img/slider/slider-img-2.jpg"
+      al
+     />
+    </div>
+    <div class="slider-container__media-mov">
+     <img
+      class="slider-container__media-mov-img"
+      src="media/img/slider/slider-img-1.jpg"
+      al
+     />
+    </div>
+    <div class="slider-container__media-mov">
+     <img
+      class="slider-container__mov-img"
+      src="media/img/slider/slider-img-2.jpg"
+      al
+     />
+    </div>
+   </div>
   </div>
   <!-- productos-->
-  <div class="productos" id="productos">
-   <div class="productosTitulo">
-    <h2>PRODUCTOS</h2>
-   </div>
-   <div class="productosCatalogo"></div>
+  <div class="section-container" id="productos">
+   <h2 class="section-container__titulo">PRODUCTOS</h2>
   </div>
+  <div class="products-container"></div>
   <script src="indexApi.js"></script>
-  <!--flecha-arriba-->
-  <div class="contacto" id="contacto">
-   <div class="contactoTitulo">
-    <h2>CONTACTO</h2>
-   </div>
-   <div class="contactoMapa">
-    <h3>Av. La Luna, esquina con Ek Balam</h3>
-    <h4>
-     &#9940; ¡Antes de ir, especifique a través de WhatsApp qué bolsa le
-     interesa! &#9940;
-    </h4>
-    <iframe
-     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3668879197385!2d-86.85298318506551!3d21.137792685939434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b1c535c8ebf%3A0x2cdefb8fb2c4a06d!2sSalon%20Rizo!5e0!3m2!1ses-419!2smx!4v1621553586826!5m2!1ses-419!2smx"
-     allowfullscreen="true"
-     loading="lazy"
-    ></iframe>
-    <div class="contenedorBotonMapa">
-     <div class="botonMapa">
-      <a
-       href="https://www.google.com/maps?ll=21.137793,-86.850794&z=15&t=m&hl=es-419&gl=MX&mapclient=embed&cid=3233298177096720493"
-       target="_blank"
-      >
-       <button>Abrir en Maps</button></a
-      >
-     </div>
-    </div>
-   </div>
-   <div class="contactoTelefono">
-    <div class="contactoTelefonoNumero">
-     <a href="tel:+529981117490">
-      <h4>&#128222;998 111 74 90</h4>
-     </a>
-    </div>
-    <div class="contactoTelefonoTexto">
-     <h4>(Haga clic en el número para llamar)</h4>
+  <!--contacto-->
+  <div class="section-container--pink" id="contacto">
+   <h2 class="section-container__titulo">CONTACTO</h2>
+  </div>
+  <div class="contact-container">
+   <h3 class="contact-container__address">Av. La Luna, esquina con Ek Balam</h3>
+   <h4 class="contact-container__advice">
+    &#9940; ¡Antes de ir, especifique a través de WhatsApp qué bolsa le
+    interesa! &#9940;
+   </h4>
+   <iframe class="contact-container__map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3668879197385!2d-86.85298318506551!3d21.137792685939434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b1c535c8ebf%3A0x2cdefb8fb2c4a06d!2sSalon%20Rizo!5e0!3m2!1ses-419!2smx!4v1621553586826!5m2!1ses-419!2smx"
+    allowfullscreen="true"
+    loading="lazy"
+   ></iframe>
+    <a class="contact-container__map-button"
+      href="https://www.google.com/maps?ll=21.137793,-86.850794&z=15&t=m&hl=es-419&gl=MX&mapclient=embed&cid=3233298177096720493"
+      target="_blank"> Abrir en Maps
+   <a class="contact-container__telephone" href="tel:+529981117490"> &#128222;998 111 74 90
+   </a>
+   <h4 class="contact-container__inst">(Haga clic en el número para llamar)</h4>
     </div>
    </div>
   </div>
