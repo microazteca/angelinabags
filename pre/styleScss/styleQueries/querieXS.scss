@@ -20,80 +20,20 @@
 	}
 
 	.slider-container {
-		&__media{
-		width: 50vw;
-		height: 50vh;
-		}
-
-		&__media-mov{
-		width: 50vw;
-		}
-
 		&__media-mov-img {
-		width: 25%;
+			width: 100%;
 		}
 	}
 
-	.productos {
+	.products-container {
 		animation: none;
 
-		.productosCatalogo {
-			.contenedorCatalogoProductos {
-				justify-content: center;
-				display: flex;
-				width: 50%;
-
-				.contenedorProductos {
-					border: 3px solid pink;
-					background-color: rgba(255, 192, 203, 0.412);
-					margin: 0.5rem;
-					border-radius: 0.4rem;
-					width: 9rem;
-					height: fit-content;
-					padding: 0.5rem 0.5rem 0;
-					flex-wrap: wrap;
-
-
-					.contenedorProductosImg {
-						margin: 0;
-						height: fit-content;
-					}
-
-					.contenedorProductosTexto {
-						height: 3.375rem;
-
-						.contenedorProductosP {
-							font-size: 0.9rem;
-
-							>p {
-								font-size: 0.9rem;
-							}
-						}
-
-					}
-
-					.contenedorBotonDetalles {
-						display: flex;
-						justify-content: center;
-						height: 25%;
-						align-self: center;
-
-						>a {
-							>button {
-								background: linear-gradient(pink, white);
-								border: 1px solid black;
-								border-radius: 0.25rem;
-								padding: 2px;
-								color: black;
-								margin: 5px 0 5px;
-								font-family: "Lexend", sans-serif;
-								font-size: 0.845rem;
-								cursor: pointer;
-							}
-						}
-					}
-				}
-			}
+		&__ind {
+			width: 50%;
+			margin: 0rem .5rem 1rem;
+			width: 9rem;
+			height: 18.5rem;
+			padding: 0.5rem 0.5rem 0;
 		}
 	}
 }

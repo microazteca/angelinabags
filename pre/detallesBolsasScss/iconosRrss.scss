@@ -1,40 +1,25 @@
-.logoFb,
-.logoInsta,
-.logoWhats {
-	>img {
-		display: inline-block;
-		padding: 5px;
-		width: 2.9rem;
-		border-radius: 0.7rem;
-		opacity: 0.79;
-	}
-}
-
-.logoFb {
+.logos-container {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	padding: 10px 1px;
+	width: 2.5rem;
+	opacity: 0.79;
 	bottom: 7rem;
 	right: 0.2rem;
-	position: fixed;
-	z-index: 1000;
-}
+	z-index: 100;
 
-.logoInsta {
-	bottom: 9.5rem;
-	right: 0.2rem;
-	position: fixed;
-	z-index: 1000;
-
-	>img {
-		border-radius: 1rem;
+	&__logo-fb-svg {
+		width: 2.2rem;
 	}
-}
 
-.logoWhats {
-	bottom: 12rem;
-	right: 0.2rem;
-	position: fixed;
-	z-index: 1000;
+	&__logo-insta-svg {
+		border-radius: 1.15rem;
+		width: 2.2rem;
+	}
 
-	>img {
-		border-radius: 1rem;
+	&__logo-whats-svg {
+		border-radius: 1.15rem;
+		width: 2.2rem;
 	}
 }

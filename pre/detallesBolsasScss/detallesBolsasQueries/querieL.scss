@@ -1,31 +1,15 @@
-@media only screen and (min-width: 1200px) {
-	.contenedorBolsa {
-		.contenedorBolsaGrafico {
-			margin: 2rem 2rem 0;
-			justify-content: center;
+@media only screen and (min-width: 1024px) {
+	.products-container {
+		&__ind {
+			width: 15%;
+			margin: 0;
 
-			.contenedorBolsaApi {
-				width: 10%;
-
-				.contenedorBolsaImagenes {
-					width: 100%;
-					display: flex;
-
-					.contenedorIndBolsa {
-
-						.contenedorImgBolsa {
-							height: fit-content;
-
-							&.modal_active {
-								width: 21rem;
-								height: 18rem;
-								top: 14%;
-								left: 38%;
-								z-index: 100;
-							}
-						}
-					}
-				}
+			&.modal_active {
+				width: 19rem;
+				height: 19rem;
+				top: 7%;
+				left: 37%;
+				z-index: 100;
 			}
 		}
 	}

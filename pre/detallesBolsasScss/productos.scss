@@ -1,133 +1,77 @@
-.contenedorBolsa {
+.desc-container {
+	font-family: "Lexend",
+		sans-serif;
+	justify-content: center;
 	display: flex;
-	font-family: "Lexend", sans-serif;
-	padding-top: 0.5rem;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: .25rem;
 
-	.contenedorBolsaTitulo {
-		.contenedorBolsaTextos {
+	&__desc-name {
+		font-size: 2rem;
+		animation: tituloEfecto 2s infinite alternate;
+	}
+
+	&__desc-price {
+		font-size: 1.5rem;
+	}
+}
+
+.products-container {
+	display: flex;
+	padding-top: 0.5rem;
+	flex-wrap: wrap;
+justify-content: center;
+	&__ind {
+		margin: 0 .5rem;
+		height: 100%;
+		cursor: pointer;
+		width: 12.5%;
+
+		&.modal_active {
+			position: fixed;
+			width: 25rem;
+			height: 10rem;
 			display: flex;
-			flex-direction: column;
 			align-items: center;
+			margin-top: 4.5rem;
+			top: 25%;
+			left: 35%;
 
-			.contenedorBolsaNombre {
-				font-size: 1rem;
-				animation: tituloEfecto 2s infinite alternate;
-				margin: 0 3rem 0;
-				text-align: center;
+			&__ind-img {
+				position: relative;
+
 			}
 
-			.contenedorBolsaPrecio {
-				font-size: 0.8rem;
+			&::after {
+				content: "";
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+				top: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 1);
+				z-index: 0;
 			}
 		}
 	}
 
+	&__ind-img {
+		border-radius: 1rem;
+		padding: .3rem .3rem 0;
+		z-index: 1;
+		object-fit: cover;
+		width: 100%;
+	}
+}
 
-	.contenedorBolsaGrafico {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 .5rem;
+@keyframes tituloEfecto {
+	0% {
+		color: black;
+	}
 
-		.contenedorBolsaApi {
-			.contenedorBolsaImagenes {
-				width: 100%;
-
-				.contenedorIndBolsa {
-					width: 100%;
-					height: 100%;
-					cursor: pointer;
-
-					.contenedorImgBolsa {
-						height: 100%;
-
-
-						>img {
-							width: 100%;
-							border-radius: 1rem;
-							padding: .3rem .3rem 0;
-							z-index: 1;
-						}
-
-						&.modal_active {
-							position: fixed;
-							width: 25rem;
-							height: 10rem;
-							display: flex;
-							align-items: center;
-							margin-top: 4.5rem;
-							top: 25%;
-							left: 35%;
-
-							.containerArrow{
-								display: none;
-							}
-
-							>img {
-								position: relative;
-
-							}
-
-							&::after {
-								content: "";
-								position: fixed;
-								width: 100vw;
-								height: 100vh;
-								top: 0;
-								left: 0;
-								background-color: rgba(0, 0, 0, 1);
-								z-index: 0;
-
-							}
-						}
-
-						.containerArrow {
-							z-index: 1;
-							display: none;
-
-
-							.containerArrowImgRight {
-								position: relative;
-								top: 1.55rem;
-								cursor: pointer;
-
-								.arrowImgRight {
-									width: 3rem;
-									height: 3rem;
-								}
-							}
-
-							.containerArrowImgLeft {
-								left: -28.25rem;
-								top: -2rem;
-								position: relative;
-								cursor: pointer;
-
-								.arrowImgLeft {
-									width: 3rem;
-									height: 3rem;
-									transform: rotate(180deg);
-								}
-							}
-
-							.containerClose {
-								position: relative;
-								cursor: pointer;
-								top: -20rem;
-								right: -27rem;
-								width: 3rem;
-								height: 3rem;
-
-								.closeImg {
-									width: 2rem;
-									height: 2rem;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+	100% {
+		color: #e63d59;
 	}
 }

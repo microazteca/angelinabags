@@ -19,71 +19,61 @@ ul {
   list-style: none;
 }
 
-.logoFb > img,
-.logoInsta > img,
-.logoWhats > img {
-  display: inline-block;
-  padding: 5px;
-  width: 2.9rem;
-  border-radius: 0.7rem;
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 10px 1px;
+  width: 2.5rem;
   opacity: 0.79;
-}
-
-.logoFb {
   bottom: 7rem;
   right: 0.2rem;
-  position: fixed;
-  z-index: 1000;
+  z-index: 100;
+}
+.logos-container__logo-fb-svg {
+  width: 2.2rem;
+}
+.logos-container__logo-insta-svg {
+  border-radius: 1.15rem;
+  width: 2.2rem;
+}
+.logos-container__logo-whats-svg {
+  border-radius: 1.15rem;
+  width: 2.2rem;
 }
 
-.logoInsta {
-  bottom: 9.5rem;
-  right: 0.2rem;
+.arrow-top {
+  height: 2rem;
+  width: 2rem;
+  bottom: 5rem;
+  right: 0.5rem;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
 }
-.logoInsta > img {
-  border-radius: 1rem;
-}
-
-.logoWhats {
-  bottom: 12rem;
-  right: 0.2rem;
-  position: fixed;
-  z-index: 1000;
-}
-.logoWhats > img {
-  border-radius: 1rem;
-}
-
-.flechaArriba > a > img {
+.arrow-top #arrowTop__svg {
   height: 2rem;
   width: 2rem;
   background-color: rgba(249, 102, 129, 0.597);
-  bottom: 5rem;
-  right: 0.5rem;
-  z-index: 100;
   border-radius: 10%;
-  position: fixed;
-  transition: opacity 0.5s, visibility 0.5s;
-  visibility: hidden;
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  opacity: 0;
 }
-.flechaArriba > a > img.active {
+.arrow-top #arrowTop__svg.active {
   visibility: visible;
   opacity: 1;
 }
-.flechaArriba > a > img.inactive {
+.arrow-top #arrowTop__svg.inactive {
   visibility: hidden;
   opacity: 0;
 }
 
-#backArrow > img {
+.arrow-back__svg {
   position: absolute;
-  top: 4.2rem;
+  top: 6rem;
   left: 0.3rem;
   cursor: pointer;
   width: 2.2rem;
@@ -94,22 +84,76 @@ ul {
   padding: 5px;
 }
 
-header {
+.header-container {
   display: flex;
-  flex-direction: column;
   background-color: pink;
   box-shadow: #ec7488 0 0 10px 5px;
+  justify-content: center;
 }
-header .headerTexto {
+.header-container__title {
+  font-family: "Dancing Script";
+  font-size: 4.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.desc-container {
+  font-family: "Lexend", sans-serif;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+.desc-container__desc-name {
+  font-size: 2rem;
+  animation: tituloEfecto 2s infinite alternate;
+}
+.desc-container__desc-price {
+  font-size: 1.5rem;
+}
+
+.products-container {
+  display: flex;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products-container__ind {
+  margin: 0 0.5rem;
+  height: 100%;
+  cursor: pointer;
+  width: 12.5%;
+}
+.products-container__ind.modal_active {
+  position: fixed;
+  width: 25rem;
+  height: 10rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-self: stretch;
+  margin-top: 4.5rem;
+  top: 25%;
+  left: 35%;
 }
-header .headerTexto > a > h1 {
-  font-family: "Dancing Script";
-  font-size: 3rem;
-  padding-bottom: 0.3rem;
+.products-container__ind.modal_active__ind-img {
+  position: relative;
+}
+.products-container__ind.modal_active::after {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 0;
+}
+.products-container__ind-img {
+  border-radius: 1rem;
+  padding: 0.3rem 0.3rem 0;
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 @keyframes tituloEfecto {
@@ -120,236 +164,127 @@ header .headerTexto > a > h1 {
     color: #e63d59;
   }
 }
-.contenedorBolsa {
-  display: flex;
-  font-family: "Lexend", sans-serif;
-  padding-top: 0.5rem;
-  align-items: center;
-  flex-direction: column;
-}
-.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos .contenedorBolsaNombre {
-  font-size: 1rem;
-  animation: tituloEfecto 2s infinite alternate;
-  margin: 0 3rem 0;
-  text-align: center;
-}
-.contenedorBolsa .contenedorBolsaTitulo .contenedorBolsaTextos .contenedorBolsaPrecio {
-  font-size: 0.8rem;
-}
-.contenedorBolsa .contenedorBolsaGrafico {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0.5rem;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes {
-  width: 100%;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
-  height: 100%;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa > img {
-  width: 100%;
-  border-radius: 1rem;
-  padding: 0.3rem 0.3rem 0;
-  z-index: 1;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-  position: fixed;
-  width: 25rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  margin-top: 4.5rem;
-  top: 25%;
-  left: 35%;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active .containerArrow {
-  display: none;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active > img {
-  position: relative;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active::after {
-  content: "";
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: black;
-  z-index: 0;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow {
-  z-index: 1;
-  display: none;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgRight {
-  position: relative;
-  top: 1.55rem;
-  cursor: pointer;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgRight .arrowImgRight {
-  width: 3rem;
-  height: 3rem;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgLeft {
-  left: -28.25rem;
-  top: -2rem;
-  position: relative;
-  cursor: pointer;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerArrowImgLeft .arrowImgLeft {
-  width: 3rem;
-  height: 3rem;
-  transform: rotate(180deg);
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerClose {
-  position: relative;
-  cursor: pointer;
-  top: -20rem;
-  right: -27rem;
-  width: 3rem;
-  height: 3rem;
-}
-.contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa .containerArrow .containerClose .closeImg {
-  width: 2rem;
-  height: 2rem;
-}
-
-.contenedorCaracteristicas {
+.table-container {
   display: flex;
   flex-direction: column;
   padding: 2rem 0 2rem;
   font-family: "Lexend", sans-serif;
   align-items: center;
 }
-.contenedorCaracteristicas .contenedorCaracteristicasTitulo > h2 {
+.table-container__title {
   animation: tituloEfecto 2s infinite alternate;
   align-self: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
-.contenedorCaracteristicas .contenedorCaracteristicasTabla {
-  padding-top: 1rem;
-}
-.contenedorCaracteristicas .contenedorCaracteristicasTabla > table {
+.table-container__desc {
   align-self: center;
-  border-collapse: collapse;
-  border: black 0 solid;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  background-color: pink;
+  border: black 2px solid;
+}
+.table-container__desc-tr {
+  border: black 2px solid;
+}
+.table-container #caract {
+  padding: 0.25rem;
   margin: 0;
 }
-.contenedorCaracteristicas .contenedorCaracteristicasTabla > table tr {
-  border: black 2px solid;
-  font-size: 1.2rem;
-}
-.contenedorCaracteristicas .contenedorCaracteristicasTabla > table #caract {
-  background-color: pink;
-  padding: 0.25rem;
-}
-.contenedorCaracteristicas .contenedorCaracteristicasTabla > table #info {
+.table-container #info {
   width: 50%;
   text-align: center;
+  margin: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
-    width: 50%;
-    height: fit-content;
-    justify-content: center;
+@media only screen and (max-width: 450px) {
+  .header-container__title {
+    font-size: 3.5rem;
   }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
+
+  .desc-container {
+    margin: 0.5rem 3rem 0;
+  }
+  .desc-container__desc-name {
+    font-size: 1.5rem;
+  }
+  .desc-container__desc-price {
+    font-size: 1.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .products-container__ind {
+    width: 50%;
+    margin: 0;
+  }
+  .products-container__ind.modal_active {
+    width: 17rem;
+    height: 17rem;
+    top: 6.5%;
+    left: 7%;
+    z-index: 100;
+  }
+
+  .table-container__title {
+    font-size: 1.5rem;
+  }
+  .table-container__desc {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) and (min-width: 375px) and (max-width: 424px) {
+  .products-container__ind.modal_active {
+    width: 17rem;
+    height: 17rem;
+    top: 8%;
+    left: 14%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 450px) and (min-width: 425px) and (max-width: 767px) {
+  .products-container__ind.modal_active {
+    width: 17rem;
+    height: 17rem;
+    top: 9%;
+    left: 18%;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 767px) {
+  .products-container__ind {
+    width: 33.3%;
+    margin: 0;
+  }
+  .products-container__ind.modal_active {
+    width: 17rem;
+    height: 17rem;
+    top: 10%;
+    left: 33%;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .products-container__ind {
+    width: 25%;
+    margin: 0;
+  }
+  .products-container__ind.modal_active {
+    width: 17rem;
+    height: 17rem;
+    top: 10%;
+    left: 33%;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .products-container__ind {
+    width: 15%;
+    margin: 0;
+  }
+  .products-container__ind.modal_active {
     width: 19rem;
     height: 19rem;
-    top: 6.5%;
-    left: 2.5%;
-    z-index: 100;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-    width: 20.5rem;
-    height: 19.5rem;
-    top: 6%;
-    left: 6%;
-    z-index: 100;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-    width: 20.5rem;
-    height: 19rem;
-    top: 6%;
-    left: 11%;
-    z-index: 100;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contenedorBolsa .contenedorBolsaGrafico {
-    margin: 0 1rem;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
-    width: 33.3%;
-    display: flex;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
-    height: fit-content;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-    width: 21rem;
-    height: 19rem;
-    top: 6%;
-    left: 28%;
-    z-index: 100;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .contenedorBolsa .contenedorBolsaGrafico {
-    margin: 0 1.5rem;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
-    width: 25%;
-    display: flex;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
-    height: fit-content;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-    width: 21rem;
-    height: 18rem;
-    top: 7.5%;
-    left: 35%;
-    z-index: 100;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .contenedorBolsa .contenedorBolsaGrafico {
-    margin: 2rem 2rem 0;
-    justify-content: center;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi {
-    width: 10%;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes {
-    width: 100%;
-    display: flex;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa {
-    height: fit-content;
-  }
-  .contenedorBolsa .contenedorBolsaGrafico .contenedorBolsaApi .contenedorBolsaImagenes .contenedorIndBolsa .contenedorImgBolsa.modal_active {
-    width: 21rem;
-    height: 18rem;
-    top: 14%;
-    left: 38%;
+    top: 7%;
+    left: 37%;
     z-index: 100;
   }
 }
