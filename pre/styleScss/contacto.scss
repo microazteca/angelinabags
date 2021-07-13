@@ -42,9 +42,8 @@
 	}
 
 	&__map-button {
-		background: linear-gradient(pink, white);
-		border: 1.75px solid black;
-		border-radius: 0.25rem;
+		background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+		border-radius: 1.5rem;
 		color: black;
 		font-family: "Lexend", sans-serif;
 		font-size: 1.1rem;
@@ -54,7 +53,7 @@
 		align-self: center;
 		text-align: center;
 		margin-top: .5rem;
-		padding: .1rem 0;
+		padding: 5px;
 	}
 
 		&__telephone {

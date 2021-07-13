@@ -211,8 +211,7 @@ ul {
   width: 200px;
   height: 400px;
   padding: 0.5rem 0.5rem 0;
-  border: 3px solid pink;
-  background-color: rgba(255, 192, 203, 0.412);
+  background: linear-gradient(to top, #a6c1ee 0%, #fbc2eb 100%);
   border-radius: 0.5rem;
   margin: 0 1rem 1rem;
 }
@@ -223,6 +222,7 @@ ul {
 }
 .products-container__ind-desc {
   height: 20%;
+  font-weight: 580;
 }
 .products-container__ind-button {
   bottom: 0.1rem;
@@ -231,14 +231,13 @@ ul {
   display: flex;
 }
 .products-container__ind-button-a {
-  background: linear-gradient(pink, white);
-  border: 1px solid black;
-  border-radius: 0.25rem;
-  padding: 2px;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  border-radius: 1.5rem;
+  padding: 5px;
   color: black;
-  margin: 5px 0 5px;
   font-family: "Lexend", sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -293,9 +292,8 @@ ul {
   text-align: center;
 }
 .contact-container__map-button {
-  background: linear-gradient(pink, white);
-  border: 1.75px solid black;
-  border-radius: 0.25rem;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  border-radius: 1.5rem;
   color: black;
   font-family: "Lexend", sans-serif;
   font-size: 1.1rem;
@@ -305,7 +303,7 @@ ul {
   align-self: center;
   text-align: center;
   margin-top: 0.5rem;
-  padding: 0.1rem 0;
+  padding: 5px;
 }
 .contact-container__telephone {
   font-size: 1.4rem;
@@ -347,8 +345,11 @@ ul {
     width: 50%;
     margin: 0rem 0.5rem 1rem;
     width: 9rem;
-    height: 18.5rem;
+    height: 19rem;
     padding: 0.5rem 0.5rem 0;
+  }
+  .products-container__ind-button {
+    margin: 0.5rem 0;
   }
 }
 @media only screen and (min-width: 424px) and (max-width: 549px) {

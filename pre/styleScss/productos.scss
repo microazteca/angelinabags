@@ -26,8 +26,7 @@
 		width: 200px;
 		height: 400px;
 		padding: 0.5rem 0.5rem 0;
-		border: 3px solid pink;
-		background-color: rgba(255, 192, 203, 0.412);
+		background: linear-gradient(to top, #a6c1ee 0%, #fbc2eb 100%);
 		border-radius: 0.5rem;
 		margin: 0 1rem 1rem;
 	}
@@ -40,6 +39,7 @@
 
 	&__ind-desc {
 		height: 20%;
+		font-weight: 580;
 	}
 
 	&__ind-button {
@@ -47,18 +47,18 @@
 		position: relative;
 		justify-content: center;
 		display: flex;
+		
 	}
 
 	&__ind-button-a {
-		background: linear-gradient(pink, white);
-		border: 1px solid black;
-		border-radius: 0.25rem;
-		padding: 2px;
+		background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+		border-radius: 1.5rem;
+		padding: 5px;
 		color: black;
-		margin: 5px 0 5px;
 		font-family: "Lexend",
 			sans-serif;
 		font-size: 1rem;
+		font-weight: bold;
 		cursor: pointer;
 	}
 }
