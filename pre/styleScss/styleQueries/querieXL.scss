@@ -1,0 +1,25 @@
+@media only screen and (min-width: 801px) and (max-width: 930px) {
+	.header-container {
+		&__title {
+			font-size: 3rem;
+			padding-left: 0.2rem;
+			margin: 0;
+		}
+
+		&__nav-a {
+			font-size: 2rem;
+		}
+	}
+
+	.slider-container {
+		&__media-mov-img {
+			width: 62.5%;
+		}
+	}
+
+	.products-container{
+		&__ind{
+			margin: 0 1.5rem 1rem;
+		}
+	}
+}

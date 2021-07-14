@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1024px) and (max-width: 1309px) {
+	.products-container {
+		&__ind {
+			width: 15%;
+			margin: 0;
+
+			&.modal_active {
+				width: 19rem;
+				height: 19rem;
+				top: 7%;
+				left: 37%;
+				z-index: 100;
+
+				.close-modal {
+					top: -5rem;
+					right: -20rem;
+				}
+			}
+		}
+	}
+}

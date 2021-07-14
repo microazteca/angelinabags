@@ -1,0 +1,98 @@
+.desc-container {
+	font-family: "Lexend",
+		sans-serif;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: .25rem;
+
+	&__desc-name {
+		font-size: 2rem;
+		animation: tituloEfecto 2s infinite alternate;
+	}
+
+	&__desc-price {
+		font-size: 1.5rem;
+	}
+}
+
+.products-container {
+	display: flex;
+	padding-top: 0.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__ind {
+		margin: 0 .5rem;
+		height: 100%;
+		cursor: pointer;
+		width: 12.5%;
+
+		&.modal_active {
+			position: fixed;
+			width: 25rem;
+			height: 10rem;
+			display: flex;
+			align-items: center;
+			margin-top: 4.5rem;
+			top: 25%;
+			left: 35%;
+
+			&__ind-img {
+				position: relative;
+			}
+
+			&::after {
+				content: "";
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+				top: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 1);
+				z-index: 0;
+			}
+
+			.close-modal {
+				width: 2rem;
+				height: 2rem;
+				z-index: 1000;
+				right: -32rem;
+				top: -4rem;
+				position: absolute;
+				display: block;
+				visibility: visible;
+
+				&__svg {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+		}
+	}
+
+	&__ind-img {
+		border-radius: 1rem;
+		padding: .3rem .3rem 0;
+		z-index: 1;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.close-modal {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@keyframes tituloEfecto {
+	0% {
+		color: black;
+	}
+
+	100% {
+		color: #e63d59;
+	}
+}

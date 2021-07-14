@@ -1,0 +1,80 @@
+.section-container {
+	display: flex;
+	flex-direction: column;
+	font-family: "Lexend",
+		sans-serif;
+	margin-top: 3rem;
+	align-items: center;
+
+	&__titulo {
+		font-size: 2.15rem;
+		padding-bottom: .25rem;
+		animation: tituloEfecto 2s infinite alternate;
+	}
+}
+
+
+.products-container {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Lexend",
+		sans-serif;
+	justify-content: center;
+	margin-top: .25rem;
+
+	&__ind {
+		width: 200px;
+		height: 400px;
+		padding: 0.5rem 0.5rem 0;
+		background: linear-gradient(to top, #a6c1ee 0%, #fbc2eb 100%);
+		border-radius: 0.5rem;
+		margin: 0 1rem 1rem;
+	}
+
+	&__ind-img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	&__ind-desc {
+		height: 20%;
+		font-weight: 580;
+	}
+
+	&__ind-button {
+		bottom: .1rem;
+		position: relative;
+		justify-content: center;
+		display: flex;
+		
+	}
+
+	&__ind-button-a {
+		background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+		border-radius: 1.5rem;
+		padding: 5px;
+		color: black;
+		font-family: "Lexend",
+			sans-serif;
+		font-size: 1rem;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.products-container {
+		&__ind {
+			-webkit-transition: 0.3s ease-in-out;
+			transition: transform 0.3s ease-in-out;
+
+			&:hover {
+				-webkit-transform: scale(1.025);
+				transform: scale(1.025);
+				background-color: pink;
+				border-radius: 0.5rem;
+			}
+		}
+	}
+}

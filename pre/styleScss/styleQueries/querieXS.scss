@@ -1,0 +1,43 @@
+@media only screen and (max-width: 423px) {
+	html {
+		width: 100%;
+	}
+
+	.header-container {
+		width: 100%;
+		align-self: stretch;
+		justify-content: space-around;
+
+		&__title {
+			padding-top: 0.25rem;
+			font-size: 1.85rem;
+			padding-left: 0.2rem;
+		}
+
+		&__nav-a {
+			font-size: 1.5rem;
+		}
+	}
+
+	.slider-container {
+		&__media-mov-img {
+			width: 100%;
+		}
+	}
+
+	.products-container {
+		animation: none;
+
+		&__ind {
+			width: 50%;
+			margin: 0rem .5rem 1rem;
+			width: 9rem;
+			height: 19rem;
+			padding: 0.5rem 0.5rem 0;
+		}
+
+		&__ind-button{
+			margin: .5rem 0;
+		}
+	}
+}

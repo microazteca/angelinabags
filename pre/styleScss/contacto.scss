@@ -1,0 +1,69 @@
+.section-container--pink {
+	display: flex;
+	flex-direction: column;
+	font-family: "Lexend", sans-serif;
+	margin-top: 3rem;
+	background-color: pink;
+	align-items: center;
+
+	&__titulo {
+		font-size: 1.5rem;
+		animation: tituloEfecto 2s infinite alternate;
+		align-self: center;
+	}
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: pink;
+	font-family: "Lexend",
+		sans-serif;
+	padding-bottom: .5rem;
+
+	&__address {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+
+	&__advice {
+		font-size: 1.1rem;
+		padding: 0 20px 7px;
+		text-align: center;
+		color: rgb(230, 36, 68);
+	}
+
+	&__map {
+		width: 100%;
+		height: 50vh;
+		align-self: center;
+		text-align: center;
+	}
+
+	&__map-button {
+		background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+		border-radius: 1.5rem;
+		color: black;
+		font-family: "Lexend", sans-serif;
+		font-size: 1.1rem;
+		cursor: pointer;
+		font-weight: bold;
+		width: 8rem;
+		align-self: center;
+		text-align: center;
+		margin-top: .5rem;
+		padding: 5px;
+	}
+
+		&__telephone {
+			font-size: 1.40rem;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		&__inst {
+			font-size: 1rem;
+			text-align: center;
+		}
+}

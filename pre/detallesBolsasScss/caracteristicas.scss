@@ -1,0 +1,36 @@
+.table-container {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0 2rem;
+	font-family: "Lexend", sans-serif;
+	align-items: center;
+
+	&__title {
+		animation: tituloEfecto 2s infinite alternate;
+		align-self: center;
+		font-size: 2rem;
+	}
+
+	&__desc {
+		align-self: center;
+		font-size: 1.2rem;
+		margin-top: .8rem;
+	background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+		border: black 2px solid;
+	}
+
+	&__desc-tr{
+		border: black 2px solid;
+	}
+	
+	#caract {
+		padding: 0.25rem;
+		margin: 0;
+	}
+
+	#info {
+		width: 50%;
+		text-align: center;
+		margin: 0;
+	}
+}

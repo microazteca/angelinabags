@@ -1,0 +1,12 @@
+.header-container {
+	display: flex;
+	background-color: pink;
+	box-shadow: rgb(236, 116, 136) 0 0 10px 5px;
+	justify-content: center;
+
+	&__title {
+		font-family: "Dancing Script";
+		font-size: 4.5rem;
+		padding-bottom: 0.3rem;
+	}
+}

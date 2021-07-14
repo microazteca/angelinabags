@@ -1,0 +1,91 @@
+@media only screen and (max-width: 450px) {
+	.header-container {
+		&__title {
+			font-size: 3.5rem
+		}
+	}
+
+	.desc-container {
+		margin: .5rem 3rem 0;
+
+		&__desc-name {
+			font-size: 1.5rem;
+		}
+
+		&__desc-price {
+			font-size: 1.25rem;
+			padding-top: .25rem;
+		}
+	}
+
+	.products-container {
+		&__ind {
+			width: 50%;
+			margin: 0;
+
+			&.modal_active {
+				width: 17rem;
+				height: 17rem;
+				top: 10.5%;
+				left: 7%;
+				z-index: 100;
+
+				.close-modal{
+					top: -6rem;
+					right: 0rem;
+				}
+			}
+		}
+	}
+
+	.table-container {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__desc {
+			font-size: 1.10rem;
+		}
+	}
+
+
+	@media only screen and (min-width: 375px) and (max-width: 424px) {
+		.products-container {
+			&__ind {
+
+				&.modal_active {
+					width: 17rem;
+					height: 17rem;
+					top: 8%;
+					left: 14%;
+					z-index: 100;
+
+					.close-modal {
+						top: -6rem;
+						right: -3rem;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 425px) and (max-width: 767px) {
+		.products-container {
+			&__ind {
+
+				&.modal_active {
+					width: 17rem;
+					height: 17rem;
+					top: 9%;
+					left: 18%;
+					z-index: 100;
+
+					.close-modal {
+						top: -6rem;
+						right: -4rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@media only screen and (min-width: 931px) {
+	.header-container {
+		&__title {
+			font-size: 3rem;
+			padding-left: 0.2rem;
+			margin: 0;
+		}
+
+		&__nav-a {
+			font-size: 2rem;
+		}
+	}
+
+
+	.products-container {
+		&__ind {
+			width: 20%;
+			width: 11.5rem;
+			height: 23rem;
+			margin: 0 1.5rem 1rem;
+		}
+	}
+}

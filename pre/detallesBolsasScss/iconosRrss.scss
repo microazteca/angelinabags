@@ -1,0 +1,25 @@
+.logos-container {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	padding: 10px 1px;
+	width: 2.5rem;
+	opacity: 0.79;
+	bottom: 7rem;
+	right: 0.2rem;
+	z-index: 100;
+
+	&__logo-fb-svg {
+		width: 2.2rem;
+	}
+
+	&__logo-insta-svg {
+		border-radius: 1.15rem;
+		width: 2.2rem;
+	}
+
+	&__logo-whats-svg {
+		border-radius: 1.15rem;
+		width: 2.2rem;
+	}
+}
