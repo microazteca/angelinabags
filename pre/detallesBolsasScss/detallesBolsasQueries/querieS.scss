@@ -8,8 +8,13 @@
 				width: 17rem;
 				height: 17rem;
 				top: 10%;
-				left: 33%;
+				left: 20%;
 				z-index: 100;
+
+				.close-modal {
+					top: -6rem;
+					right: -5rem;
+				}
 			}
 		}
 	}

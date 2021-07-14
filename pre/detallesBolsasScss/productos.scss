@@ -22,7 +22,8 @@
 	display: flex;
 	padding-top: 0.5rem;
 	flex-wrap: wrap;
-justify-content: center;
+	justify-content: center;
+
 	&__ind {
 		margin: 0 .5rem;
 		height: 100%;
@@ -41,7 +42,6 @@ justify-content: center;
 
 			&__ind-img {
 				position: relative;
-
 			}
 
 			&::after {
@@ -54,6 +54,22 @@ justify-content: center;
 				background-color: rgba(0, 0, 0, 1);
 				z-index: 0;
 			}
+
+			.close-modal {
+				width: 2rem;
+				height: 2rem;
+				z-index: 1000;
+				right: -32rem;
+				top: -4rem;
+				position: absolute;
+				display: block;
+				visibility: visible;
+
+				&__svg {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
 		}
 	}
 
@@ -63,6 +79,11 @@ justify-content: center;
 		z-index: 1;
 		object-fit: cover;
 		width: 100%;
+	}
+
+	.close-modal {
+		visibility: hidden;
+		display: none;
 	}
 }
 

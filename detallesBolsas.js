@@ -7,8 +7,8 @@ fetch(`${url}/?id=${id}`)
  .then((data) => {
   data[0].images.forEach((images) => {
    let container = document.createElement("div");
-   container.innerHTML = 
-   `
+   container.innerHTML =
+    `
     <img class="products-container__ind-img" src="${images.url}"/>
 			`;
    container.classList.add("products-container__ind");
@@ -19,25 +19,31 @@ fetch(`${url}/?id=${id}`)
    el.addEventListener("click", function (ev) {
     ev.stopPropagation();
     this.parentNode.classList.add("modal_active");
-    // alert("click");
+    let close_svg = document.createElement("div")
+    close_svg.innerHTML =
+     `
+      <img class="close-modal__svg" src="media/svg/closeImg.svg"/>
+    `
+    close_svg.classList.add("close-modal")
+    contenedor = document.querySelector(".modal_active")
+    contenedor.appendChild(close_svg)
    });
   });
-
   document.querySelectorAll(".products-container__ind").forEach((el) => {
    el.addEventListener("click", function (ev) {
     ev.stopPropagation();
     this.classList.remove("modal_active");
    });
   });
-  //
  });
+
 fetch(`${url}/?id=${id}`)
  .then((resp) => resp.json())
  .then((data) => {
   data.forEach((bolsa) => {
    let container2 = document.createElement("div");
-   container2.innerHTML = 
-   `
+   container2.innerHTML =
+    `
     <h2 class="desc-container__desc-name">${bolsa.description}</h2>
     <h2 class="desc-container__desc-price">$${bolsa.price}.00 MXN</h2>
 			`;

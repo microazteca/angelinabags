@@ -26,9 +26,14 @@
 			&.modal_active {
 				width: 17rem;
 				height: 17rem;
-				top: 6.5%;
+				top: 10.5%;
 				left: 7%;
 				z-index: 100;
+
+				.close-modal{
+					top: -6rem;
+					right: 0rem;
+				}
 			}
 		}
 	}
@@ -54,6 +59,11 @@
 					top: 8%;
 					left: 14%;
 					z-index: 100;
+
+					.close-modal {
+						top: -6rem;
+						right: -3rem;
+					}
 				}
 			}
 		}
@@ -69,6 +79,11 @@
 					top: 9%;
 					left: 18%;
 					z-index: 100;
+
+					.close-modal {
+						top: -6rem;
+						right: -4rem;
+					}
 				}
 			}
 		}
